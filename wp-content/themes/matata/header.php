@@ -64,6 +64,51 @@
 				</a>
 			<?php endif;?><!--End header image check. -->
 		</div>
+		
+		<div class="altTabs">
+			<ul class="nav nav-pills">
+				<li class="dropdown navTab active">
+					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink"><!--data-toggle="dropdown" -->
+					<span class="icon fa fa-h-square" title="Trang nhất"></span>
+					<span class="icon-text">Trang nhất</span>
+					<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="#"> Hoạt động gần đây</a></li>
+						<li><a href="#">Tác giả</a></li>
+						<li class="divider"></li>
+						<li><a href="#">vv...</a></li>
+					</ul>
+				</li>
+				<li class="dropdown navTab">					
+					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink">
+					<span class="icon fa fa-comments" title="Diễn đàn"></span>
+					<span class="icon-text">Diễn đàn</span>
+					<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="#"> Tìm kiếm trên diễn đàn</a></li>
+						<li class="divider"></li>
+						<li><a href="#">vv...</a></li>
+					</ul>
+				</li>
+				<li class="dropdown navTab">
+					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink">
+					<span class="icon fa fa-shopping-cart" style="" title="Mua - Bán"></span>
+					<span class="icon-text">Mua - Bán</span> 
+					<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="#"> Kinh doanh chuyên nghiệp</a></li>
+						<li><a href="#">Máy tính - Laptops</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Đồng hồ & Phụ kiện</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+
 		<div class="altTabs">
 			<ul class="altTabsContainer static-cloned-copies">
 	
