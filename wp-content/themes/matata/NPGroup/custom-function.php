@@ -6,11 +6,18 @@ function sw_styles_and_scripts() {
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
 
+
+
+
 //add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
 
 //$wp_admin_bar->remove_menu( 'wpadminbar' );
 
 function remove_wp_logo( $wp_admin_bar ) {
+	$wp_admin_bar->remove_node( 'wp-logo' );
+}
+
+function remove_wp_menu( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node( 'wp-logo' );
 }
 
