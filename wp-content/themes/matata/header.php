@@ -23,6 +23,14 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'matata' ); ?></a>
+	
+	
+	
+<a href="http://www.leolink.com.vn/">
+<span></span>
+<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/NPGroup/images/logo.png" alt="LeoLink ......">
+</a>
+
 
 	<header id="masthead" class="site-header" role="banner">		
 		<div class="site-branding">
