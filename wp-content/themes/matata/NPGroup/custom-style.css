@@ -1,4 +1,7 @@
+@body-bg: #0003;
 body {
+    background: #D8D8D8 !important;
+    background-color: #D8D8D8 !important;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -8,12 +11,11 @@ body {
     color: rgb(20,20,20);
     word-wrap: break-word;
     line-height: 1.28;
-}
-body {
     font: 13px/1.231 arial,helvetica,clean,sans-serif;
     *font-size: small;
     *font: x-small;
 }
+
 li {
     list-style: none;
 }

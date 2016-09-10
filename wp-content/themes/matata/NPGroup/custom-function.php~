@@ -1,11 +1,18 @@
 <?php
 // Them css va javascript vao giua the head
 function sw_styles_and_scripts() {
+        wp_register_style('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+        wp_enqueue_style('matata-googleapis-script');
+        wp_register_style('matata-bootstrapcdn-script', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+        wp_enqueue_style('matata-bootstrapcdn-script');
+        wp_register_style('matata-bootstrapcdn-style', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+        wp_enqueue_style('matata-bootstrapcdn-style');
+        wp_register_style('matata-NavTabsClick-script', get_template_directory_uri().'/NPGroup/NavTabsClick.js');
+        wp_enqueue_style('matata-NavTabsClick-script');
         wp_register_style('matata-custom-style', get_template_directory_uri().'/NPGroup/custom-style.css');
         wp_enqueue_style('matata-custom-style');
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
-
 
 
 
