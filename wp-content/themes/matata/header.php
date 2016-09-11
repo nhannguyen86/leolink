@@ -74,7 +74,7 @@
 					<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="icon fa fa-h-square" href="#"> Hoạt động gần đây</a></li>
+						<li><a class="icon fa fa-h-square" href="<?php echo esc_url( home_url( '/' ) ); ?>sample-page"> Hoạt động gần đây</a></li>
 						<li><a href="#">Tác giả</a></li>
 						<li class="divider"></li>
 						<li><a href="#">vv...</a></li>

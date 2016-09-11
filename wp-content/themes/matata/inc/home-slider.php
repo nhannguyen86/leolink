@@ -33,6 +33,9 @@ if ($slidecat !== 'default'){
 
          echo '<li>';
          the_post_thumbnail( 'matata-featured' );
+/**
+ * the_post_thumbnail( 'matata-featured' );
+ */
          ?>
 
          <div class="slide-content">
