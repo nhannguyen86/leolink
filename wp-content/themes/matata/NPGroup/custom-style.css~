@@ -1,7 +1,7 @@
 @body-bg: #0003;
 body {
-    background: #0003 !important;
-    background-color: #0003 !important;
+    background: #D8D8D8 !important;
+    background-color: #D8D8D8 !important;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -15,8 +15,7 @@ body {
     *font-size: small;
     *font: x-small;
 }
-.panel-body {
-background:#FFCCFF;}
+
 li {
     list-style: none;
 }
