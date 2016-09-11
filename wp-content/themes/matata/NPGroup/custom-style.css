@@ -265,3 +265,13 @@ li {
     font-weight: normal;
     line-height: normal;
 }
+.widget_search button {
+    line-height: 22px;
+}
+.no-results button.search-icon {
+    line-height: 15px;    
+    padding-top: 3px;
+}
+.widget_search input[type="text"] {
+    height: 25px;
+}
