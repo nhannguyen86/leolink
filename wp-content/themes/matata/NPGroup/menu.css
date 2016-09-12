@@ -5457,6 +5457,9 @@ nav {
 	white-space: nowrap;
 	word-wrap: normal
 }
+.navTabs .navTab > label {
+	display: block;
+}
 
 .navTabs .publicTabs .navTab:first-child, .navTabs .publicTabs .navTab:first-child .navLink,
 	.navTabs .publicTabs .navTab.firstVisible, .navTabs .publicTabs .navTab.firstVisible

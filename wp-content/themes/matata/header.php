@@ -48,12 +48,12 @@
 					</li>
 				<!-- forums -->
 					<li class="navTab forums Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-						<a class="navLink" href="http://www.handheld.com.vn/community/"><span style="font-size:1.2em;top:3px;" class="icon glyphicons glyphicons-conversation" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
+						<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon glyphicons glyphicons-conversation" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
 						<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/community/"></a>
 					</li>
 				<!-- extra tabs: middle -->
 					<li class="navTab nodetab57 Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-						<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span style="" class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
+						<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
 						<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/mua-ban/"></a>
 					</li>
 		
@@ -71,22 +71,16 @@
 				
 			</ul>
 			
-			
 				<ul class="visitorTabs static-cloned-original">
 					<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
 						<label for="LoginControl">
 							<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-key" title="Đăng nhập hoặc Đăng ký"></span><span class="icon-text">Đăng nhập hoặc Đăng ký</span></a>
 						</label>
 					</li>
-					<li class="navigationHiddenTabs navTab Popup PopupControl PopupClosed PopupContainerControl" style="display: none;">
-					<a class="navLink NoPopupGadget" rel="Menu"><span class="menuIcon">...</span></a>
-					</li>
 				</ul>
 			
 		</div>
 		
-		<span class="helper"></span>
-					
 	</nav>
 	<!-- End Top menu -->
 		
