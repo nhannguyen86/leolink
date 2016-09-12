@@ -112,7 +112,7 @@ function update_post_thumbnail_cache( $wp_query = null ) {
  * @return string The post thumbnail image tag.
  */
 function get_the_post_thumbnail( $post = null, $size = 'post-thumbnail', $attr = '' ) {
-	$post = get_post( $post );	
+	$post = get_post( $post );
 	if ( ! $post ) {
 		return '';
 	}
@@ -127,7 +127,7 @@ function get_the_post_thumbnail( $post = null, $size = 'post-thumbnail', $attr =
 	 *                           values (in that order). Default 'post-thumbnail'.
 	 */
 	$size = apply_filters( 'post_thumbnail_size', $size );
-	
+
 	if ( $post_thumbnail_id ) {
 
 		/**
