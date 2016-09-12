@@ -51,8 +51,8 @@ html {
 
 body {
 	margin: 0;
-	background: #0003;
-    	background-color: #0003;
+	/*background: #0003;
+    	background-color: #0003;*/
 }
 
 article,
@@ -356,9 +356,9 @@ html {
 }
 
 body {
-	/* background: #f7f7f7; Fallback for when there is no custom background color defined. */
+	/* background: #f7f7f7; Fallback for when there is no custom background color defined. 
 	background: #0003;
-    	background-color: #0003;
+    	background-color: #0003;*/
 }
 
 blockquote:before,
