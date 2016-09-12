@@ -64,7 +64,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php
 matata_sidebar_select();
 get_footer();

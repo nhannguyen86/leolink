@@ -1,3 +1,5 @@
+<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-numposts="20" width="100%" data-colorscheme="light" data-version="v2.3"></div>
 <?php
 /**
  * The template for displaying comments.
@@ -9,7 +11,6 @@
  *
  * @package Matata
  */
-
 /*
  * If the current post is protected by a password and
  * the visitor has not yet entered the password we will
