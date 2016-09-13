@@ -275,3 +275,14 @@ li {
 .widget_search input[type="text"] {
     height: 25px;
 }
+.bx-pager-item{
+	display: none !important;
+}
+.advps-excerpt-block-one{
+	padding: 0px !important;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: none !important;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: none !important;

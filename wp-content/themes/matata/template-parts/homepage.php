@@ -63,6 +63,7 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
+<?php echo do_shortcode('[advps-slideshow optset="1"]');?>
 	</div><!-- #primary -->
 <?php
 matata_sidebar_select();

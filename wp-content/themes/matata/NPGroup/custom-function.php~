@@ -11,6 +11,8 @@ function sw_styles_and_scripts() {
         wp_enqueue_style('matata-NavTabsClick-script');
         wp_register_style('matata-custom-style', get_template_directory_uri().'/NPGroup/custom-style.css');
         wp_enqueue_style('matata-custom-style');
+        wp_register_style('matata-menu-style', get_template_directory_uri().'/NPGroup/menu.css');
+        wp_enqueue_style('matata-menu-style');
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
 

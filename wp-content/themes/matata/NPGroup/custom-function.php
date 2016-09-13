@@ -29,5 +29,12 @@ function remove_wp_logo( $wp_admin_bar ) {
 function remove_wp_menu( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node( 'wp-logo' );
 }
-
+//Tạo một bộ lọc mới tên là lay_custom_post_type
+add_filter('pre_get_posts','lay_custom_post_type');
+//Thêm các lệnh thực thi trong bộ lọc
+function lay_custom_post_type($query) {
+if (is_home() && $query->is_main_query ())
+$query->set ('post_type', array ('post','khach-hang'));
+return $query;
+}
 ?>
