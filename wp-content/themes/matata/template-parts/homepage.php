@@ -63,7 +63,14 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
+<section id="advps-slideshow1" class="widget widget_categories">
+<h2 class="widget-title"><i class="fa fa-slideshare" aria-hidden="true"></i> Khách hàng</h2>
 <?php echo do_shortcode('[advps-slideshow optset="1"]');?>
+</section>
+<section id="advps-slideshow4" class="widget widget_categories">
+<h2 class="widget-title"><i class="fa fa-delicious" aria-hidden="true"></i> Đối tác</h2>
+<?php echo do_shortcode('[advps-slideshow optset="4"]');?>
+</section>
 	</div><!-- #primary -->
 <?php
 matata_sidebar_select();

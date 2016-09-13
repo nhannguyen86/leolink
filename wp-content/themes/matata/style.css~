@@ -1297,6 +1297,7 @@ ul.bxslider {
 }
 .bxslider img{
 	margin: auto;
+	height: 300px !important;
 }
 .bxslider .slide-content{
     /*background-color: rgba(0, 0, 0, 0.2);*/
