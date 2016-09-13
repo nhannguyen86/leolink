@@ -4711,21 +4711,19 @@ a {
 	outline: none !important;
 	width: 368px;
 	height: 105px;
-	background: url("styles/handheld/logo.png") 50% 50% no-repeat;
 	-webkit-background-size: 368px 105px;
 	background-size: 368px 105px
 }
 
 #logo a
-img {
-	display: none
+img {	
 }
 
 @media ( -webkit-min-device-pixel-ratio : 2) , ( min-resolution : 192dpi) , (
 		min-resolution : 1.5dppx) {
 	#logo
 a {
-		background-image: url("styles/handheld/logo-hd.png")
+		
 	}
 }
 

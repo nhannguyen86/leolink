@@ -17,11 +17,26 @@
 
 		<?php get_sidebar( 'footer' ); ?>
 
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'matata' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'matata' ), 'WordPress' ); ?></a>
+
+		<div id="logo" style="float: left;margin-top: 20px;">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img class="alignnone size-medium wp-image-76" src="http://localhost/leolink/wp-content/uploads/2016/09/LeoLinkFooter-300x82.png" alt="LeoLinkFooter" width="300" height="82" />
+				</a>
+			<!--End footer image check. -->
+		</div>
+
+		
+		<div class="coppy_right">
+                <p>© <span>Copyright 2016 Leolink.com.vn,</span>  All rights reserved</p>
+                <p>® Leolink.com.vn giữ bản quyền nội dung trên website này.</p>
+		<p>Nhóm NP | Thiết kế: website, ứng dụng desktop, ứng dụng mobile...</p>
+             </div>
+
+		<!--<div class="site-info">
+			<a href="<? php echo esc_url( __( 'https://wordpress.org/', 'matata' ) ); ?>"><? php printf( esc_html__( 'Proudly powered by %s', 'matata' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'matata' ), 'matata', '<a href="'. esc_url('http://justhemes.com/').'" rel="designer">JusThemes.com</a>' ); ?>
-		</div><!-- .site-info -->
+			<? php printf( esc_html__( 'Theme: %1$s by %2$s.', 'matata' ), 'matata', '<a href="'. esc_url('http://justhemes.com/').'" rel="designer">JusThemes.com</a>' ); ?>
+		</div> .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

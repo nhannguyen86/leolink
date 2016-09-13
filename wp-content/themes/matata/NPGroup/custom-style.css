@@ -63,7 +63,6 @@ li {
     outline: none !important;
     width: 368px;
     height: 105px;
-    background: url("styles/handheld/logo.png") 50% 50% no-repeat;
     background-size: 368px 105px;
 }
 
@@ -268,6 +267,9 @@ li {
 .widget_search button {
     line-height: 22px;
 }
+.widget li {
+    padding: 5px 0 !important;
+}
 .no-results button.search-icon {
     line-height: 15px;    
     padding-top: 3px;
@@ -307,4 +309,13 @@ li {
 }
 #advps_container4 .bx-wrapper .bx-controls-direction a {
     display: none;
+}
+#colophon {
+    padding: 0px !important;
+}
+.coppy_right {
+    height: auto;
+    line-height: 1em;
+    float: right;
+    margin-top: 30px;
 }
