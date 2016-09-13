@@ -32,58 +32,58 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <body <?php body_class(); ?>>
+<!-- Top menu -->
+<nav class="primaryNavLinks">
+
+	<div class="navTabs pageWidth">
+		<ul class="publicTabs static-cloned-original">
+			<!-- home -->
+			<!-- extra tabs: home -->
+				<li class="navTab articles selected no-icon has-icon-config firstVisible" data-icon-config="0">
+					<a class="navLink" href="">Trang nhất</a>
+					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/1st/"></a>
+				</li>
+			<!-- forums -->
+				<li class="navTab forums Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
+					<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon glyphicons glyphicons-conversation" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
+					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/community/"></a>
+				</li>
+			<!-- extra tabs: middle -->
+				<li class="navTab nodetab57 Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
+					<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
+					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/mua-ban/"></a>
+				</li>
+	
+			<!-- responsive popup -->
+			<li style="display: none;" class="navTab navigationHiddenTabs Popup PopupControl PopupClosed no-icon PopupContainerControl">	
+							
+				<a class="navLink NoPopupGadget" rel="Menu"><span class="menuIcon">Menu</span></a>
+				
+				
+			</li>
+				
+			
+			<!-- no selection -->
+			
+			
+		</ul>
+		
+			<ul class="visitorTabs static-cloned-original">
+				<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
+					<label for="LoginControl">
+						<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-key" title="Đăng nhập hoặc Đăng ký"></span><span class="icon-text">Đăng nhập hoặc Đăng ký</span></a>
+					</label>
+				</li>
+			</ul>
+		
+	</div>
+	
+</nav>
+<!-- End Top menu -->
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'matata' ); ?></a>
 	
-	<!-- Top menu -->
-	<nav class="primaryNavLinks withoutSecondaryLinks">
-
-		<div class="navTabs">
-			<ul class="publicTabs static-cloned-original">
-				<!-- home -->
-				<!-- extra tabs: home -->
-					<li class="navTab articles selected no-icon has-icon-config firstVisible" data-icon-config="0">
-						<a class="navLink" href="">Trang nhất</a>
-						<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/1st/"></a>
-					</li>
-				<!-- forums -->
-					<li class="navTab forums Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-						<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon glyphicons glyphicons-conversation" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
-						<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/community/"></a>
-					</li>
-				<!-- extra tabs: middle -->
-					<li class="navTab nodetab57 Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-						<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
-						<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/mua-ban/"></a>
-					</li>
-		
-				<!-- responsive popup -->
-				<li style="display: none;" class="navTab navigationHiddenTabs Popup PopupControl PopupClosed no-icon PopupContainerControl">	
-								
-					<a class="navLink NoPopupGadget" rel="Menu"><span class="menuIcon">Menu</span></a>
-					
-					
-				</li>
-					
-				
-				<!-- no selection -->
-				
-				
-			</ul>
-			
-				<ul class="visitorTabs static-cloned-original">
-					<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
-						<label for="LoginControl">
-							<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-key" title="Đăng nhập hoặc Đăng ký"></span><span class="icon-text">Đăng nhập hoặc Đăng ký</span></a>
-						</label>
-					</li>
-				</ul>
-			
-		</div>
-		
-	</nav>
-	<!-- End Top menu -->
-		
 	<header id="masthead" class="site-header" role="banner">		
 		<!--<div class="site-branding">
 

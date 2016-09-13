@@ -20,7 +20,7 @@ li {
     list-style: none;
 }
 
-#page {
+#page,.pageWidth {
     margin: 0 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -277,7 +277,16 @@ li {
 .widget_search input[type="text"] {
     height: 25px;
 }
-#advps_container1 .bx-pager-item {
+.primaryNavLinks {
+	position:fixed;
+	width: 100%;
+	left: 0;
+    opacity: 0.9;
+    right: 0;
+    transition: opacity 0.2s ease 0s;
+    z-index: 99;
+    display: none;
+}#advps_container1 .bx-pager-item {
 	display: none !important;
 }
 #advps_container4 .bx-pager-item {
