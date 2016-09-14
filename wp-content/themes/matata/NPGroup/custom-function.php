@@ -1,8 +1,7 @@
 <?php
 // Them css va javascript vao giua the head
 function sw_styles_and_scripts() {
-		//wp_register_script('matata-googleapis-script', 'https://code.jquery.com/jquery-3.1.0.min.js');         
-		wp_register_style('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+		wp_register_script('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
         wp_enqueue_script('matata-googleapis-script');
         wp_register_script('matata-bootstrapcdn-script', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
         wp_enqueue_script('matata-bootstrapcdn-script');
