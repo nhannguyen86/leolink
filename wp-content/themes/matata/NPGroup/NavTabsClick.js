@@ -1,23 +1,23 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
     
-    $('ul.nav li a').click(function(e) {
+    jQuery('ul.nav li a').click(function(e) {
 	  var $this = $(this);
 	  if (!$this.hasClass('active')) {
 		$this.addClass('active');
 	  }
 	  e.preventDefault();
 	});
-    var element_position = $('#content').offset().top;
+    var element_position = jQuery('#content').offset().top;
     var y_scroll_pos = window.pageYOffset;
 	if(y_scroll_pos > element_position) {
-		$('.primaryNavLinks').show();
+		jQuery('.primaryNavLinks').show();
 	}
-    $(window).on('scroll', function() {
+    jQuery(window).on('scroll', function() {
     	var y_scroll_pos = window.pageYOffset;
     	if(y_scroll_pos > element_position) {
-    		$('.primaryNavLinks').show();
+    		jQuery('.primaryNavLinks').show();
     	} else {
-    		$('.primaryNavLinks').hide();
+    		jQuery('.primaryNavLinks').hide();
     	}
     });
 });
