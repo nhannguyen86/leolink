@@ -10,6 +10,12 @@ function sw_styles_and_scripts() {
         wp_enqueue_style('matata-bootstrapcdn-style');
         wp_register_script('matata-NavTabsClick-script', get_template_directory_uri().'/NPGroup/NavTabsClick.js');
         wp_enqueue_script('matata-NavTabsClick-script');
+        wp_register_script('matata-MenuProduct-script', get_template_directory_uri().'/NPGroup/MenuProduct.js');
+        wp_enqueue_script('matata-MenuProduct-script');
+        wp_register_script('matata-jqtip-script', get_template_directory_uri().'/NPGroup/jqtip/jqtip.js');
+        wp_enqueue_script('matata-jqtip-script');
+        wp_register_style('matata-jqtip-style', get_template_directory_uri().'/NPGroup/jqtip/jqtip.css');
+        wp_enqueue_style('matata-jqtip-style');
         wp_register_style('matata-custom-style', get_template_directory_uri().'/NPGroup/custom-style.css');
         wp_enqueue_style('matata-custom-style');
         wp_register_style('matata-menu-style', get_template_directory_uri().'/NPGroup/menu.css');
@@ -37,5 +43,32 @@ function lay_custom_post_type($query) {
 if (is_home() && $query->is_main_query ())
 $query->set ('post_type', array ('post','khach-hang'));
 return $query;
+}
+function list_posts_by_taxonomy( $post_type, $taxonomy, $get_terms_args = array(), $wp_query_args = array() ){
+    $tax_terms = get_terms( $taxonomy, $get_terms_args );
+    if( $tax_terms ){
+        foreach( $tax_terms  as $tax_term ){
+            $query_args = array(
+                'post_type' => $post_type,
+                "$taxonomy" => $tax_term->slug,
+                'post_status' => 'publish',
+                'posts_per_page' => -1,
+                'ignore_sticky_posts' => true
+            );
+            $query_args = wp_parse_args( $wp_query_args, $query_args );
+ 
+            $my_query = new WP_Query( $query_args );
+            if( $my_query->have_posts() ) { ?>
+                <h2 id="<?php echo $tax_term->slug; ?>" class="tax_term-heading"><?php echo $tax_term->name; ?></h2>
+                <ul>
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                <?php endwhile; ?>
+                </ul>
+                <?php
+            }
+            wp_reset_query();
+        }
+    }
 }
 ?>

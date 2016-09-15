@@ -328,3 +328,50 @@ li {
     float: right;
     margin-top: 30px;
 }
+
+
+#sidebar li {
+    margin: 7px 0;
+}
+#sidebar a {
+    color: #444f6f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#sidebar .sub-menu-lv-1 {
+    padding-left: 15px;
+}
+#sidebar .sub-menu-lv-1 .sub-menu-lv-2 {
+    padding-left: 15px;
+    margin-left: 0;
+    border-left: 1px solid #f0d36b;
+}
+#sidebar .sub-menu-lv-2 a, #sidebar .sub-menu-lv-3 a {
+    color: #5e6782;
+    font-weight: normal;
+    text-transform: none;
+}
+#sidebar .sub-menu-lv-1 .sub-menu-lv-2 .sub-menu-lv-3 {
+    padding-left: 15px;
+    border-left: 1px solid #f0d36b;
+}
+.hidden {
+    display: none;
+}
+#sidebar {
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+}
+#secondary_product {
+    float: left;
+    width: 20.999%;
+    border: 1px blue solid;
+}
+#primary_product {
+    width: 75.999%;
+    float: right;
+    border: 1px solid;
+    height: 700px;
+}
