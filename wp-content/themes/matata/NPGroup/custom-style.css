@@ -373,5 +373,8 @@ li {
     width: 75.999%;
     float: right;
     border: 1px solid;
-    height: 700px;
+    height: auto;
+}
+.navTabs li:HOVER .dropdown-menu {
+	display: block;
 }
