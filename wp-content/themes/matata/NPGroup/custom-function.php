@@ -48,7 +48,10 @@ function list_posts_by_taxonomy( $post_type, $taxonomy, $get_terms_args = array(
 	$sanphamshow = 2;
     foreach( get_terms( 'danh_muc_san_pham', array('parent' => '0') ) as $parent_term ) {
 	  // display top level term name
-	  echo '<a href="#">'. $parent_term->name .'</a>';
+	  echo '<a href="' . add_query_arg( array( 
+        'key1' => 'value1',
+        'key2' => 'value2',
+    ), get_page_link(108)) . '">'. $parent_term->name .'</a>';
 	  echo '<ul class="sub-menu sub-menu-lv-2">';
 	  foreach( get_terms( 'danh_muc_san_pham', array( 'hide_empty' => false, 'parent' => $parent_term->term_id ) ) as $child_term ) {
 		//display name of all childs of the parent term		
@@ -85,26 +88,10 @@ function list_posts_by_taxonomy( $post_type, $taxonomy, $get_terms_args = array(
 		}
 		wp_reset_query();
 		
-		
-		
 		echo '</li>';
 	  }
 	  echo '</ul>';	
 	}
-	
-	
-			//<ul class="sub-menu sub-menu-lv-3 hidden">			
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qgen-a30_11" id="menu-product-11" oldtitle="Chất trợ giặt" title="">Q-GEN A30</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qgen-d17_45" id="menu-product-45" oldtitle="Nước giặt công nghiệp" title="">Q-GEN D17</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qgen-b25_46" id="menu-product-46" oldtitle="Chất tẩy dạng lỏng gốc Oxy dùng cho đồ trắng" title="">Q-GEN B25</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qgen-n25_47" id="menu-product-47" oldtitle="Khử dư lượng Chlorine và Hydrogen Peroxide" title="">Q-GEN N25</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qblanc_70" id="menu-product-70" oldtitle="Xà phòng giặt dạng bột siêu sạch" title="">Q-BLANC</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qmagic_71" id="menu-product-71" class="more hidden" oldtitle="Nước giặt gia dụng" title="">Q-MAGIC</a></li>
-			//	<li class=""><a href="http://avco.vn/index.php/products/details/qsofty_72" id="menu-product-72" class="more hidden" oldtitle="Nước xả vải hương ban mai" title="">Q-SOFTY</a></li>
-			//	<li class="see-more"><a href="#">See more...</a></li>
-			//</ul>
-	
-	
 }
 
 ?>

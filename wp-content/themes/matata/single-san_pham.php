@@ -12,28 +12,28 @@ get_header(); ?>
 		
 	
 	<!-- <li>Cay thu muc san pham</li>-->
-		<div id="sidebar">
-			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
-				<ul style="overflow: hidden; width: auto; height: auto;">
-					<li>
-						<a href="<?php echo get_home_url(); ?>">Trang chủ</a>
-					</li>
-					<li>
-						<a href="<?php echo get_page_link(79);?>">Nhóm sản phẩm</a>
-					</li>
-					<li>
-						<a href="#">Sản phẩm</a>
-						<ul class="product-menu sub-menu sub-menu-lv-1 ">
-							<li>
-								<?php
-									list_posts_by_taxonomy( 'san_pham', 'danh_muc_san_pham' );			
-								?>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+	<div id="sidebar">
+		<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
+			<ul style="overflow: hidden; width: auto; height: auto;">
+				<li>
+					<a href="<?php echo get_home_url(); ?>">Trang chủ</a>
+				</li>
+				<li>
+					<a href="<?php echo get_page_link(79);?>">Nhóm sản phẩm</a>
+				</li>
+				<li>
+					<a href="#">Sản phẩm</a>
+					<ul class="product-menu sub-menu sub-menu-lv-1 ">
+						<li>
+							<?php
+								list_posts_by_taxonomy( 'san_pham', 'danh_muc_san_pham' );			
+							?>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
+	</div>
 		
 	
 	</aside>

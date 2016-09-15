@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: List Product with all category template
+ * Template Name: List Product with one category template
  *
  * @package Matata
  */
@@ -17,7 +17,10 @@ get_header(); ?>
 					<a href="<?php echo get_home_url(); ?>">Trang chủ</a>
 				</li>
 				<li>
-					<a href="<?php echo get_page_link(79);?>">Nhóm sản phẩm</a>
+					<a href="<?php echo add_query_arg( array( 
+        'key1' => 'value1',
+        'key2' => 'value2',
+    ), get_page_link(79) );?>">Nhóm sản phẩm</a>
 				</li>
 				<li>
 					<a href="#">Sản phẩm</a>
@@ -38,7 +41,8 @@ get_header(); ?>
 	<div id="primary_product" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php  $page = get_query_var( 'page', 1 );  ?>
-<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page</h1>
+		<?php  $k = get_query_var( 'k', 1 );  ?>
+<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page  <?php echo (int) $k; ?></h1>
 
 		<select name="page-dropdown"
  onchange='document.location.href=this.options[this.selectedIndex].value;'> 
