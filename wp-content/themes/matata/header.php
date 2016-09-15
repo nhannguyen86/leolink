@@ -40,18 +40,35 @@
 			<!-- home -->
 			<!-- extra tabs: home -->
 				<li class="navTab articles selected no-icon has-icon-config firstVisible" data-icon-config="0">
-					<a class="navLink" href="">Trang nhất</a>
+					<a class="navLink" href=""><span class="icon fa fa-h-square" title="Diễn đàn"></span><span class="icon-text">Trang nhất</span></a>
 					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/1st/"></a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="<?php echo esc_url( home_url( '/' ) ); ?>sample-page"> Hoạt động gần đây</a></li>
+						<li><a href="#">Tác giả</a></li>
+						<li class="divider"></li>
+						<li><a href="#">vv...</a></li>
+					</ul>
 				</li>
 			<!-- forums -->
 				<li class="navTab forums Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-					<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon glyphicons glyphicons-conversation" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
+					<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon fa fa-comments" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
 					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/community/"></a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="#"> Tìm kiếm trên diễn đàn</a></li>
+						<li class="divider"></li>
+						<li><a href="#">vv...</a></li>
+					</ul>
 				</li>
 			<!-- extra tabs: middle -->
 				<li class="navTab nodetab57 Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
 					<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
 					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/mua-ban/"></a>
+					<ul class="dropdown-menu">
+						<li><a class="icon fa fa-h-square" href="#"> Kinh doanh chuyên nghiệp</a></li>
+						<li><a href="#">Máy tính - Laptops</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Đồng hồ & Phụ kiện</a></li>
+					</ul>
 				</li>
 	
 			<!-- responsive popup -->
