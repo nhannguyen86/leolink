@@ -5,7 +5,6 @@ jQuery(document).ready(function () {
 	  if (!$this.hasClass('active')) {
 		$this.addClass('active');
 	  }
-	  e.preventDefault();
 	});
     (function() {
     	var element_position = jQuery('#content').offset().top;
