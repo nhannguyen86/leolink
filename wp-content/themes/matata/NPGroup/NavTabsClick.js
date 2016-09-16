@@ -22,4 +22,13 @@ jQuery(document).ready(function () {
     		check();
     	});
     })();
+    
+    jQuery('#cfacebook a.chat_fb').click(function (){
+    	$b = jQuery('#fchat');
+    	if ($b.is(':visible')) {
+    		$b.hide();
+    	} else {
+    		$b.show();
+    	}
+    });
 });

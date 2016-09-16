@@ -42,5 +42,13 @@
 
 <?php wp_footer(); ?>
 
+<div id="cfacebook">
+    <a href="javascript:;" class="chat_fb"><i class="fa fa-comments"></i> Hỗ trợ trực tuyến</a>
+    <div id="fchat" class="fchat">
+        <div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/leolink.com.vn" data-width="250" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+        <div class="chat-single"><a target="_blank" href="https://www.facebook.com/leolink.com.vn"><i class="fa fa-facebook-square"></i> Fanpage leolink.com.vn</a></div>
+    </div>
+</div>
+
 </body>
 </html>
