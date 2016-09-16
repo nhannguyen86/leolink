@@ -33,6 +33,16 @@ function js_sidebar() {
 		}
 	});
 }
-function js_sidebar_active() {
-	alert('ssss');
+function js_sidebar_one_category_parent_active(idTagA) {
+	jQuery("#category-parent-"+idTagA).next("ul").removeClass('hidden');
+	jQuery("#category-parent-"+idTagA).addClass('active');
+}
+function js_sidebar_one_category_active(idTagA) {
+	jQuery("#category-"+idTagA).next("ul").removeClass('hidden');
+	jQuery("#category-"+idTagA).addClass('active');
+}
+function js_sidebar_product_detail_active(idTagA) {
+	jQuery("#product-"+idTagA).parents('.sub-menu-lv-3').removeClass('hidden');
+	jQuery("#product-"+idTagA).parents('.sub-menu-lv-3').addClass('active');
+	jQuery("#product-"+idTagA).addClass('active');
 }

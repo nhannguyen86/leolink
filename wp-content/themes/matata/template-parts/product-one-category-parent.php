@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: List Product with one category template
+ * Template Name: List Product with one category parent template
  *
  * @package Matata
  */
@@ -59,7 +59,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <script type="text/javascript">
-	js_sidebar_one_category_active(<?php echo (int) $k; ?>);
+	js_sidebar_one_category_parent_active(<?php echo (int) $k; ?>);
 </script>
 <?php
 get_footer();

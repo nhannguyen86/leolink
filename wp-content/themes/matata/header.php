@@ -153,6 +153,12 @@
 					</ul>
 				</li>
 				<li class="dropdown navTab">					
+					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
+					<span class="icon fa fa-comments" title="Diễn đàn"></span>
+					<span class="icon-text">Sản phẩm</span>
+					</a>
+				</li>
+				<li class="dropdown navTab">					
 					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink">
 					<span class="icon fa fa-comments" title="Diễn đàn"></span>
 					<span class="icon-text">Diễn đàn</span>
