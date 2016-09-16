@@ -39,20 +39,20 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<?php  //$page = get_query_var( 'page', 1 );  ?>
 		<?php  $k = get_query_var( 'c', 1 );  ?>
-<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page  <?php echo (int) $k; ?></h1>
+<!--<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page  <?php echo (int) $k; ?></h1>
 
 		<select name="page-dropdown"
  onchange='document.location.href=this.options[this.selectedIndex].value;'> 
- <option value="">
-<?php echo esc_attr( __( 'Select page' ) ); ?></option> 
+ <option value="">-->
+<?php //echo esc_attr( __( 'Select page' ) ); ?></option> 
  <?php 
-  $pages = get_pages(); 
-  foreach ( $pages as $page ) {
-  	$option = '<option value="' . get_page_link( $page->ID ) . '">';
-	$option .= $page->post_title . ' ' . $page->post_name . ' ' . $page->ID;
-	$option .= '</option>';
-	echo $option;
-  }
+  //$pages = get_pages(); 
+  //foreach ( $pages as $page ) {
+  //	$option = '<option value="' . get_page_link( $page->ID ) . '">';
+	//$option .= $page->post_title . ' ' . $page->post_name . ' ' . $page->ID;
+	//$option .= '</option>';
+	//echo $option;
+  //}
  ?>
 </select>
 

@@ -124,8 +124,8 @@ function product_all_category( $post_type, $taxonomy, $get_terms_args = array(),
         	$page = get_query_var( $child_term->term_id , 1 );
     
         	$my_page_array[$child_term->term_id] = $page;
-        	var_dump($my_page_array);
-    echo '---------------------------------------------------------------------------------';
+        	//var_dump($my_page_array);
+    //echo '---------------------------------------------------------------------------------';
         	//if (array_key_exists($child_term->term_id, $my_page_array)){
 			//	$my_page_array["key"] = "value";
 			//}else{
@@ -177,13 +177,13 @@ function product_all_category( $post_type, $taxonomy, $get_terms_args = array(),
 }
 
 function page_nav($child_term_id, $my_page_array) {
-        	var_dump($my_page_array);
-    echo '=========================================================';
+        	//var_dump($my_page_array);
+    //echo '=========================================================';
 	$linkAllCategory = get_page_link(79);
 	//if( is_singular() )
 	//	return;
 	$linkPageOther = '?';
-	var_dump($my_page_array);
+	//var_dump($my_page_array);
 	foreach ($my_page_array as $key => $value){
 		if ($key == $child_term_id){
 			$page = $value;
@@ -191,7 +191,7 @@ function page_nav($child_term_id, $my_page_array) {
 		$linkPageOther .= $key . '=' . $value . '&';
 	}
 	$linkPageOther = substr($linkPageOther, 0, -1);
-	echo $linkPageOther;
+	//echo $linkPageOther;
 	$linkAllCategory .= $linkPageOther;
 	global $my_query;
 	/** Stop execution if there's only 1 page */
@@ -215,9 +215,9 @@ function page_nav($child_term_id, $my_page_array) {
 		$links[] = $paged + 2;
 		$links[] = $paged + 1;
 	}
-var_dump($paged);
-echo 'ooooo ';
-var_dump($links);
+//var_dump($paged);
+//echo 'ooooo ';
+//var_dump($links);
 	echo '<div class="navigation"><ul>' . "\n";
 
 	/**	Previous Post Link */
@@ -246,17 +246,17 @@ var_dump($links);
 
 	/**	Link to current page, plus 2 pages in either direction if necessary */
 	sort( $links );
-var_dump($links);
-			echo 'my_page_array </br> ';
-var_dump($my_page_array);
+//var_dump($links);
+//			echo 'my_page_array </br> ';
+//var_dump($my_page_array);
 //links: 1, 2, 3
 //my_page_array: 9
 	foreach ( (array) $links as $link ) {
 		$linkAllCategory = get_page_link(79);
 		$my_page_array_temp = $my_page_array;
 		foreach ($my_page_array as $key => $value){
-			echo 'kkkxxx '.$link.' jjj </br> ';
-			echo 'value '.$value.' jjj </br> ';
+			//echo 'kkkxxx '.$link.' jjj </br> ';
+			//echo 'value '.$value.' jjj </br> ';
 			if ($key == $child_term_id){
 				$my_page_array_temp[$key] = $link;
 				$linkPageOther .= $key . '=' . $link . '&';
@@ -266,7 +266,7 @@ var_dump($my_page_array);
 		}
 		$my_page_array = $my_page_array_temp;
 		$linkPageOther = substr($linkPageOther, 0, -1);
-		echo 'bbbb '.$linkPageOther.' nnnn </br> ';
+		//echo 'bbbb '.$linkPageOther.' nnnn </br> ';
 		$linkAllCategory .= $linkPageOther;
 		$class = $paged == $link ? ' class="active"' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, $linkAllCategory, $link ); //esc_url( get_pagenum_link( $link ) )
@@ -382,8 +382,8 @@ function one_category_page_nav() {
 		$links[] = $paged + 2;
 		$links[] = $paged + 1;
 	}
-var_dump($paged);
-var_dump($links);
+//var_dump($paged);
+//var_dump($links);
 	echo '<div class="navigation"><ul>' . "\n";
 
 	/**	Previous Post Link */
@@ -402,7 +402,7 @@ var_dump($links);
 
 	/**	Link to current page, plus 2 pages in either direction if necessary */
 	sort( $links );
-var_dump($links);
+//var_dump($links);
 	foreach ( (array) $links as $link ) {
 		$class = $paged == $link ? ' class="active"' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
