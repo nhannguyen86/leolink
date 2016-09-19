@@ -129,6 +129,29 @@
 
 		<!--site navigation. -->
 		
+		<!--languages, social, search. -->
+		<div class="languagesocialsearch">
+			<div class="s_search">
+				<div class="box-search">
+					
+					<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" style="padding: 0;">
+						<input name="s" >
+						<button class="btnn" type="submit"></button>
+					</form>
+				</div>
+			</div>
+			<div class="icon_social">
+				<a target="_blank" href="https://www.facebook.com/daviteq" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/facebook-icon.png"></a>
+				<a target="_blank" href="https://twitter.com/daviteq" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/twitter-icon.png"></a>
+				<a target="_blank" href="#" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/googleplus-icon.png"></a>
+			</div>
+			<div class="s_lang">	
+				 <a href="http://www.daviteq.com/trang-chu.html" class="vietnamese"></a>
+				<a href="http://www.daviteq.com/home-page.html" class="english"></a>
+			</div>
+		</div>
+		<!--end languages, social, search. -->
+		
 		<div id="logo">
 			<?php if ( get_header_image() ) : ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
