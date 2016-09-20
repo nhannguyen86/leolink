@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<aside id="secondary_product" class="widget-area" role="complementary">
+	<aside id="firstary_product" class="widget-area" role="complementary">
 		
 	
 	<!-- <li>Cay thu muc san pham</li>-->
@@ -35,6 +35,9 @@ get_header(); ?>
 	<!-- <li>End cay thu muc san pham</li>-->
 	
 	</aside>
+	
+	
+	
 	<div id="primary_product" class="content-area">
 		<main id="main" class="site-main" role="main" style="padding: 10px;">
 		<?php  $page = get_query_var( 'page', 1 );  ?>
@@ -134,5 +137,13 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	
+	<aside id="secondary_product" class="widget-area" role="complementary">
+		<section id="advps-slideshow1" class="widget widget_categories">
+		<h2 class="widget-title"><i class="fa fa-slideshare" aria-hidden="true"></i> Khách hàng</h2>
+		<?php echo do_shortcode('[advps-slideshow optset="2"]');?>
+		</section>
+	</aside>
+	
 <?php
 get_footer();

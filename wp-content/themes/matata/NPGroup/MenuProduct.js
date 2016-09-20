@@ -19,19 +19,19 @@ function js_sidebar() {
 		}
 		return true;
 	});
-	jQuery("#sidebar a").qtip({
-		position: {
-			my: 'left bottom',
-			at: 'right bottom',
-			adjust: {
-				x: 5,
-				y: -5
-			}
-		},
-		style: {
-			classes: 'ui-tooltip-shadow ui-tooltip-' + 'bootstrap'
-		}
-	});
+	//jQuery("#sidebar a").qtip({
+	//	position: {
+	//		my: 'left bottom',
+	//		at: 'right bottom',
+	//		adjust: {
+	//			x: 5,
+	//			y: -5
+	//		}
+	//	},
+	//	style: {
+	//		classes: 'ui-tooltip-shadow ui-tooltip-' + 'bootstrap'
+	//	}
+	//});
 }
 function js_sidebar_one_category_parent_active(idTagA) {
 	jQuery("#category-parent-"+idTagA).next("ul").removeClass('hidden');

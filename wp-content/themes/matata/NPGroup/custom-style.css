@@ -370,16 +370,24 @@ li {
     float: left;
     margin-right: 10px;
 }
-#secondary_product {
+#firstary_product {
     float: left;
-    width: 20.999%;
-    border: 1px blue solid;
+    width: 19.999%;
+    font-size: 11px;
+    border-top: solid 1px #cccccc;
+    background: rgb(244, 244, 244) url(http://www.leolink.com.vn/wp-content/uploads/2016/09/fullblock.png) repeat-x;
+    padding: 9px;
 }
 #primary_product {
-    width: 75.999%;
-    float: right;
-    border: 1px solid;
+    width: 56.999%;
+    float: left;
+    border: 1px solid #cccccc;
     height: auto;
+    margin-left: 1.6%;
+}
+#secondary_product {
+    float: right;
+    width: 19.999%;
 }
 #colophon #logoo {
     height: auto;
@@ -403,10 +411,13 @@ li {
 /* =RESPONSIVE MEDIA
 ----------------------------------------------- */
 @media (max-width: 700px) {
-
+	#firstary_product{
+        width: 100%;   
+	}
     #primary_product{
         width: 100%;   
-        margin-top: 40px; 
+        margin-top: 20px; 
+        margin-left: 0;
     }
     #secondary_product{
         width: 100%;

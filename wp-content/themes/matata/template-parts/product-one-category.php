@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<aside id="secondary_product" class="widget-area" role="complementary">
+	<aside id="firstary_product" class="widget-area" role="complementary">
 		
 	
 	<!-- <li>Cay thu muc san pham</li>-->

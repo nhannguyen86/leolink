@@ -2,8 +2,8 @@
 // Them css va javascript vao giua the head
 function sw_styles_and_scripts() {
 		//wp_register_script('matata-googleapis-script', 'https://code.jquery.com/jquery-3.1.0.min.js');         
-		wp_register_script('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
-        wp_enqueue_script('matata-googleapis-script');
+		//wp_register_script('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+        //wp_enqueue_script('matata-googleapis-script');
         wp_register_script('matata-bootstrapcdn-script', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
         wp_enqueue_script('matata-bootstrapcdn-script');
         wp_register_style('matata-bootstrapcdn-style', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
@@ -12,10 +12,10 @@ function sw_styles_and_scripts() {
         wp_enqueue_script('matata-NavTabsClick-script');
         wp_register_script('matata-MenuProduct-script', get_template_directory_uri().'/NPGroup/MenuProduct.js');
         wp_enqueue_script('matata-MenuProduct-script');
-        wp_register_script('matata-jqtip-script', get_template_directory_uri().'/NPGroup/jqtip/jqtip.js');
-        wp_enqueue_script('matata-jqtip-script');
-        wp_register_style('matata-jqtip-style', get_template_directory_uri().'/NPGroup/jqtip/jqtip.css');
-        wp_enqueue_style('matata-jqtip-style');
+        //wp_register_script('matata-jqtip-script', get_template_directory_uri().'/NPGroup/jqtip/jqtip.js');
+        //wp_enqueue_script('matata-jqtip-script');
+        //wp_register_style('matata-jqtip-style', get_template_directory_uri().'/NPGroup/jqtip/jqtip.css');
+        //wp_enqueue_style('matata-jqtip-style');
         wp_register_style('matata-custom-style', get_template_directory_uri().'/NPGroup/custom-style.css');
         wp_enqueue_style('matata-custom-style');
         wp_register_style('matata-menu-style', get_template_directory_uri().'/NPGroup/menu.css');
@@ -117,7 +117,7 @@ function product_all_category( $post_type, $taxonomy, $get_terms_args = array(),
 	$my_page_array = array();}
     foreach( get_terms( 'danh_muc_san_pham', array('parent' => '0') ) as $parent_term ) {
 		// display top level term name
-		echo '<section id="advps-slideshow1" class="widget widget_categories" style="margin-top: 1.5em;">';
+		echo '<section id="advps-slideshow1" class="widget widget_categories" style="margin-bottom: 1.5em;">';
 		echo '<h2 class="widget-title"><i class="fa fa-slideshare" aria-hidden="true"></i> ' . $parent_term->name . '</h2>';
 	  	
         foreach( get_terms( 'danh_muc_san_pham', array( 'hide_empty' => false, 'parent' => $parent_term->term_id ) ) as $child_term ) {

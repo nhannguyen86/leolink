@@ -33,9 +33,9 @@
              </div>
 
 		<!--<div class="site-info">
-			<a href="<? php echo esc_url( __( 'https://wordpress.org/', 'matata' ) ); ?>"><? php printf( esc_html__( 'Proudly powered by %s', 'matata' ), 'WordPress' ); ?></a>
+			<a href="< ? php echo esc_url( __( 'https://wordpress.org/', 'matata' ) ); ?>">< ? php printf( esc_html__( 'Proudly powered by %s', 'matata' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<? php printf( esc_html__( 'Theme: %1$s by %2$s.', 'matata' ), 'matata', '<a href="'. esc_url('http://justhemes.com/').'" rel="designer">JusThemes.com</a>' ); ?>
+			< ? php printf( esc_html__( 'Theme: %1$s by %2$s.', 'matata' ), 'matata', '<a href="'. esc_url('http://justhemes.com/').'" rel="designer">JusThemes.com</a>' ); ?>
 		</div> .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
