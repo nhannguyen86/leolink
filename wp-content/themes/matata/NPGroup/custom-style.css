@@ -442,6 +442,25 @@ li {
     }
 }
 
+@media (max-width: 500px) {
+	article.matata-product {
+		margin-bottom: 20px;
+		width:40% !important;
+		float: left;
+		margin-left: 8%;
+	}
+	
+	article:nth-of-type(2n+1).matata-product{
+		margin-left: 8% ;
+		clear: left;
+	}
+	
+	article:nth-of-type(3n+1).matata-product{
+		margin-left: 8% !important;
+		clear: none !important;
+	}
+}
+
 .bx-wrapper .bx-viewport {
 	left: 0px !important;
 }
@@ -635,3 +654,16 @@ li {
     width: 70%;
 }
 
+/* defining .matata-product */
+
+article.matata-product {
+	margin-bottom: 20px;
+    width:28%;
+    float: left;
+    margin-left: 8%;
+}
+
+article:nth-of-type(3n+1).matata-product{
+    margin-left: 0;
+    clear: left;
+}

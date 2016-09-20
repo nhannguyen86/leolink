@@ -16,7 +16,7 @@ get_header(); ?>
 				<li>
 					<a href="<?php echo get_home_url(); ?>">Trang chủ</a>
 				</li>
-				<li>
+				<li class="active">
 					<a href="<?php echo get_page_link(79);?>">Nhóm sản phẩm</a>
 				</li>
 				<li>
