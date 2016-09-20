@@ -141,9 +141,14 @@ get_header(); ?>
 	<aside id="secondary_product" class="widget-area" role="complementary">
 		<section id="advps-slideshow1" class="widget widget_categories">
 		<h2 class="widget-title"><i class="fa fa-slideshare" aria-hidden="true"></i> Khách hàng</h2>
-		<?php echo do_shortcode('[advps-slideshow optset="2"]');?>
+		<?php echo do_shortcode('[advps-slideshow optset="5"]');?>
 		</section>
 	</aside>
-	
+	<aside id="secondary_product" class="widget-area" role="complementary">
+		<section id="advps-slideshow1" class="widget widget_categories">
+		<h2 class="widget-title"><i class="fa fa-delicious" aria-hidden="true"></i> Đối tác</h2>
+		<?php echo do_shortcode('[advps-slideshow optset="6"]');?>
+		</section>
+	</aside>
 <?php
 get_footer();
