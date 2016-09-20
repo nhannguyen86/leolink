@@ -46,17 +46,14 @@ li {
 .site-header #logo {
     text-align: left;
     float: left;
-}
-
-#logo {
     height: auto;
     line-height: 1em;
     display: block;
-    max-width: 100%;
     vertical-align: middle;
+    max-width: 20% !important;
 }
 
-#logo a {
+.site-header #logo a {
     display: inline-block;
     vertical-align: bottom;
     text-decoration: none !important;
@@ -65,6 +62,7 @@ li {
     height: 105px;
     background-size: 368px 105px;
 }
+
 
 .site-header .altTabs {
     display: block;
@@ -218,7 +216,7 @@ li {
     display: block;
 }
 .widget{
-	background: rgb(244, 244, 244) url(images/fullblock.png) repeat-x;
+	background: rgb(244, 244, 244) url(http://localhost/leolink/wp-content/uploads/2016/09/fullblock.png) repeat-x;
 	padding: 9px;
     border: 1px solid rgb(249, 249, 249);
     -webkit-border-radius: 3px;
@@ -383,6 +381,50 @@ li {
     border: 1px solid;
     height: auto;
 }
+#colophon #logoo {
+    height: auto;
+    line-height: 1em;
+    display: block;
+    vertical-align: middle;
+    float: left;margin-top: 20px;
+    width: 20%;
+}
+
+#colophon #logoo a {
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none !important;
+    outline: none !important;
+    width: 368px;
+    height: auto;
+    background-size: 368px 105px;
+}
+
+/* =RESPONSIVE MEDIA
+----------------------------------------------- */
+@media (max-width: 700px) {
+
+    #primary_product{
+        width: 100%;   
+        margin-top: 40px; 
+    }
+    #secondary_product{
+        width: 100%;
+    }
+    
+    #colophon #logoo{
+        width: 100%;
+    }
+    #colophon .coppy_right{
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+.bx-wrapper .bx-viewport {
+	left: 0px !important;
+}
+
 .navTabs li:HOVER .dropdown-menu {
 	display: block;
 }
@@ -571,6 +613,4 @@ li {
     margin-top: 10px;
     width: 70%;
 }
-#logo {
-    max-width: 20% !important;
-}
+

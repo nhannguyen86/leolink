@@ -907,7 +907,7 @@ a:active {
 --------------------------------------------------------------*/
 #secondary{
 	float:right;
-    width:29.999%;
+    width:19.999%;
 }
 
 .widget {
@@ -991,6 +991,76 @@ a:active {
 .widget select {
 	max-width: 100%;
 }
+/*--------------------------------------------------------------
+# Left menu
+--------------------------------------------------------------*/
+#firstPrimary{
+	width: 19.999%;
+    float: left;
+    font-size: 11px;
+    border-top: solid 1px #cccccc;
+    background: rgb(244, 244, 244) url(http://localhost/leolink/wp-content/uploads/2016/09/fullblock.png) repeat-x;
+    padding: 9px;
+}
+.sitebar_title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+.contact_main {
+    border-bottom: solid 1px #cccccc;
+    margin-top: 14px;
+    padding-right: 15px;
+}
+.contact_main .name_comp {
+    font-weight: bold;
+    width: 207px;
+    margin-left: -3px;
+}
+.contact_main h3 {
+    font-size: 15px;
+    font-weight: normal;
+}
+.contact_main .name_comp span {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+.contact_main .c_l1 {
+    padding-left: 8px;
+    font-size: 13px;
+}
+.contact_main .c_l2 {
+    padding-left: 16px;
+    margin-top: 10px;
+}
+.contact_add {
+    margin-top: 10px;
+}
+.contact_phone {
+    background-position: left center;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+.contact_fax {
+    background-position: left center;
+    padding-left: 20px;
+}
+.contact_mail {
+    background-position: left center;
+    padding-left: 20px;
+    color: #20a9e3;
+    margin-bottom: 10px;
+}
+.supp {
+    margin-top: 8px;
+    color: #666666;
+    font-weight: bold;
+}
+.menufacture {
+    border: none;
+}
 
 /*--------------------------------------------------------------
 # Content
@@ -1009,8 +1079,9 @@ a:active {
 }
 
 #primary{
-	width: 66.999%;
+	width: 56.999%;
     float: left;
+    margin-left: 1.6%;
 }
 
 .left-sidebar #primary {
@@ -1430,9 +1501,13 @@ object {
 /* =RESPONSIVE MEDIA
 ----------------------------------------------- */
 @media (max-width: 700px) {
-
+    #firstPrimary{
+        width: 100%;
+    }
     #primary{
-        width: 100%;    
+        margin-top: 40px;
+        width: 100%; 
+        margin-left: 0;
     }
     #secondary{
         margin-top: 40px;

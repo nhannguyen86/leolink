@@ -218,6 +218,7 @@ if ( 'update' == $action ) {
 
 		// Switch translation in case WPLANG was changed.
 		$language = get_option( 'WPLANG' );
+		var_dump($language);
 		if ( $language ) {
 			load_default_textdomain( $language );
 		} else {

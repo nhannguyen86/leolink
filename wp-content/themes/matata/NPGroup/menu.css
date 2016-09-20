@@ -679,7 +679,7 @@ a {
 
 .primaryContent {
 	background: rgb(244, 244, 244)
-		url('styles/elegance2/xenforo/gradients/fullblock.png') repeat-x;
+		url('http://localhost/leolink/wp-content/uploads/2016/09/fullblock.png') repeat-x;
 	padding: 9px;
 	border: 1px solid rgb(249, 249, 249);
 	-webkit-border-radius: 3px;
@@ -717,7 +717,7 @@ a {
 
 .secondaryContent {
 	background: rgb(244, 244, 244)
-		url('styles/elegance2/xenforo/gradients/fullblock.png') repeat-x;
+		url('http://localhost/leolink/wp-content/uploads/2016/09/fullblock.png') repeat-x;
 	padding: 9px;
 	border: 1px solid rgb(249, 249, 249);
 	-webkit-border-radius: 3px;
@@ -1937,7 +1937,7 @@ table.dataTable {
 	_width: 99.5%;
 	margin: 10px 0;
 	background: rgb(244, 244, 244)
-		url('styles/elegance2/xenforo/gradients/fullblock.png') repeat-x;
+		url('http://localhost/leolink/wp-content/uploads/2016/09/fullblock.png') repeat-x;
 	padding: 9px;
 	border: 1px solid rgb(249, 249, 249);
 	-webkit-border-radius: 3px;

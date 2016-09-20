@@ -18,7 +18,7 @@
 		<?php get_sidebar( 'footer' ); ?>
 
 
-		<div id="logo" style="float: left;margin-top: 20px;">
+		<div id="logoo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img class="alignnone size-medium wp-image-76" src="http://www.leolink.com.vn/wp-content/uploads/2016/09/LeoLinkFooter-300x82.png" alt="LeoLinkFooter" width="300" height="82" />
 				</a>

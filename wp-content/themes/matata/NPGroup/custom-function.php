@@ -424,6 +424,18 @@ function one_category_page_nav() {
 	echo '</ul></div>' . "\n";
 
 }
+
+function change_to_vi() {
+		$language = update_option("WPLANG", "vi");
+		//get_option( 'WPLANG' );
+		//var_dump($language);
+		//if ( $language ) {
+		//	load_default_textdomain( $language );
+		//} else {
+		//	unload_textdomain( 'default' );
+		//}
+}
+
 ?>
 
 

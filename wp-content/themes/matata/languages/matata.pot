@@ -5,14 +5,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-05-11 13:00+0200\n"
+"POT-Creation-Date: 2016-09-20 14:49+0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Poedit-KeywordsList: __;_e;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop;translate_nooped_plural\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -34,37 +34,37 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: comments.php:29
+#: comments.php:30
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgstr ""
 
-#: comments.php:40 comments.php:61
+#: comments.php:41 comments.php:62
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:43 comments.php:64
+#: comments.php:44 comments.php:65
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:44 comments.php:65
+#: comments.php:45 comments.php:66
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:82
+#: comments.php:83
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:21
+#: footer.php:36
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:21
+#: footer.php:36
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:23
+#: footer.php:38
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
@@ -105,8 +105,24 @@ msgstr ""
 msgid "Shows widgets at footer sidebar three."
 msgstr ""
 
-#: header.php:25
+#: header.php:43 header.php:152 header.php:153
+msgid "Home"
+msgstr ""
+
+#: header.php:54 header.php:165 header.php:166
+msgid "Products"
+msgstr ""
+
+#: header.php:71 header.php:171 header.php:172
+msgid "Sign in"
+msgstr ""
+
+#: header.php:82
 msgid "Skip to content"
+msgstr ""
+
+#: header.php:177 header.php:178
+msgid "Sign up"
 msgstr ""
 
 #: inc/customizer.php:26
@@ -261,7 +277,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: inc/home-slider.php:54
+#: inc/home-slider.php:57
 msgid "Home Slider is enabled but you have no posts with thumbnails."
 msgstr ""
 
@@ -344,10 +360,14 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: template-parts/homepage.php:50
+#: template-parts/homepage.php:90
 msgid "&laquo; Older Entries"
 msgstr ""
 
-#: template-parts/homepage.php:51
+#: template-parts/homepage.php:91
 msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: template-parts/product-one-category.php:47
+msgid "Select page"
 msgstr ""

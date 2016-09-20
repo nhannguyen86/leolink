@@ -40,55 +40,35 @@
 			<!-- home -->
 			<!-- extra tabs: home -->
 				<li class="navTab articles selected no-icon has-icon-config firstVisible" data-icon-config="0">
-					<a class="navLink" href=""><span class="icon fa fa-h-square" title="Diễn đàn"></span><span class="icon-text">Trang nhất</span></a>
-					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/1st/"></a>
+					<a class="navLink" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="icon fa fa-h-square" title="<?php echo __('Home', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Home', 'matata'); ?></span></a>
+					<!--<a rel="Menu" class="SplitCtrl" href="http://www.leolink.com.vn/1st/"></a>
 					<ul class="dropdown-menu">
-						<li><a class="icon fa fa-h-square" href="<?php echo esc_url( home_url( '/' ) ); ?>sample-page"> Hoạt động gần đây</a></li>
+						<li><a class="icon fa fa-h-square" href="< ? php echo esc_url( home_url( '/' ) ); ?>sample-page"> Hoạt động gần đây</a></li>
 						<li><a href="#">Tác giả</a></li>
 						<li class="divider"></li>
 						<li><a href="#">vv...</a></li>
-					</ul>
+					</ul>-->
 				</li>
-			<!-- forums -->
+			<!-- products -->
 				<li class="navTab forums Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-					<a class="navLink" href="http://www.handheld.com.vn/community/"><span class="icon fa fa-comments" title="Diễn đàn"></span><span class="icon-text">Diễn đàn</span></a>
-					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/community/"></a>
+					<a class="navLink" href="<?php echo get_page_link(79);?>"><span class="icon fa fa-product-hunt" title="<?php echo __('Products', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Products', 'matata'); ?></span></a>
+					<!--<a rel="Menu" class="SplitCtrl" href="http://www.leolink.com.vn/community/"></a>
 					<ul class="dropdown-menu">
 						<li><a class="icon fa fa-h-square" href="#"> Tìm kiếm trên diễn đàn</a></li>
 						<li class="divider"></li>
 						<li><a href="#">vv...</a></li>
-					</ul>
-				</li>
-			<!-- extra tabs: middle -->
-				<li class="navTab nodetab57 Popup PopupControl PopupClosed has-icon icon-show-text PopupContainerControl">
-					<a class="navLink" href="http://www.handheld.com.vn/mua-ban/"><span class="icon fa fa-shopping-cart" title="Mua - Bán"></span><span class="icon-text">Mua - Bán</span></a>
-					<a rel="Menu" class="SplitCtrl" href="http://www.handheld.com.vn/mua-ban/"></a>
-					<ul class="dropdown-menu">
-						<li><a class="icon fa fa-h-square" href="#"> Kinh doanh chuyên nghiệp</a></li>
-						<li><a href="#">Máy tính - Laptops</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Đồng hồ & Phụ kiện</a></li>
-					</ul>
-				</li>
-	
+					</ul>-->
+				</li>	
 			<!-- responsive popup -->
-			<li style="display: none;" class="navTab navigationHiddenTabs Popup PopupControl PopupClosed no-icon PopupContainerControl">	
-							
-				<a class="navLink NoPopupGadget" rel="Menu"><span class="menuIcon">Menu</span></a>
-				
-				
+			<li style="display: none;" class="navTab navigationHiddenTabs Popup PopupControl PopupClosed no-icon PopupContainerControl">								
+				<a class="navLink NoPopupGadget" rel="Menu"><span class="menuIcon">Menu</span></a>	
 			</li>
-				
-			
 			<!-- no selection -->
-			
-			
-		</ul>
-		
+		</ul>		
 			<ul class="visitorTabs static-cloned-original">
 				<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
 					<label for="LoginControl">
-						<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-key" title="Đăng nhập hoặc Đăng ký"></span><span class="icon-text">Đăng nhập hoặc Đăng ký</span></a>
+						<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-sign-in" title="<?php echo __('Sign in', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Sign in', 'matata'); ?></span></a>
 					</label>
 				</li>
 			</ul>
@@ -141,16 +121,21 @@
 				</div>
 			</div>
 			<div class="icon_social">
-				<a target="_blank" href="https://www.facebook.com/daviteq" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/facebook-icon.png"></a>
-				<a target="_blank" href="https://twitter.com/daviteq" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/twitter-icon.png"></a>
+				<a target="_blank" href="https://www.facebook.com/LeoLink-539131742943152/" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/facebook-icon.png"></a>
+				<a target="_blank" href="https://twitter.com/LeoLink" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/twitter-icon.png"></a>
 				<a target="_blank" href="#" class="vietnamese"><img src="http://localhost/leolink/wp-content/uploads/2016/09/googleplus-icon.png"></a>
 			</div>
 			<div class="s_lang">	
-				 <a href="http://www.daviteq.com/trang-chu.html" class="vietnamese"></a>
-				<a href="http://www.daviteq.com/home-page.html" class="english"></a>
+				 <a href="<?php echo add_query_arg( array( 
+	  		'c' => "vi"
+        ), "http://localhost/leolink/languages/"); ?>" class="vietnamese" style="width: 25px; float: left;">&nbsp;</a>
+				<a href="<?php echo add_query_arg( array( 
+	  		'c' => "en"
+        ), "http://localhost/leolink/languages/"); ?>" class="english" style="width: 25px;float: right;">&nbsp;</a>
 			</div>
 		</div>
 		<!--end languages, social, search. -->
+		
 		
 		<div id="logo">
 			<?php if ( get_header_image() ) : ?>
@@ -163,25 +148,37 @@
 		<div class="altTabs">
 			<ul class="nav nav-pills">
 				<li class="dropdown navTab active">
-					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink"><!--data-toggle="dropdown" -->
-					<span class="icon fa fa-h-square" title="Trang nhất"></span>
-					<span class="icon-text">Trang nhất</span>
-					<b class="caret"></b>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dropdown-toggle navLink"><!--data-toggle="dropdown" -->
+					<span class="icon fa fa-h-square" title="<?php echo __('Home', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('Home', 'matata'); ?></span>
+					<!--<b class="caret"></b>-->
 					</a>
-					<ul class="dropdown-menu">
+					<!--<ul class="dropdown-menu">
 						<li><a class="icon fa fa-h-square" href="<?php echo esc_url( home_url( '/' ) ); ?>sample-page"> Hoạt động gần đây</a></li>
 						<li><a href="#">Tác giả</a></li>
 						<li class="divider"></li>
 						<li><a href="#">vv...</a></li>
-					</ul>
+					</ul>-->
 				</li>
 				<li class="dropdown navTab">					
 					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
-					<span class="icon fa fa-comments" title="Diễn đàn"></span>
-					<span class="icon-text">Sản phẩm</span>
+					<span class="icon fa fa-product-hunt" title="<?php echo __('Products', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('Products', 'matata'); ?></span>
 					</a>
 				</li>
 				<li class="dropdown navTab">					
+					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
+					<span class="icon fa fa-sign-in" title="<?php echo __('Sign in', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('Sign in', 'matata'); ?></span>
+					</a>
+				</li>
+				<li class="dropdown navTab">					
+					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
+					<span class="icon fa fa-sign-out" title="<?php echo __('Sign up', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('Sign up', 'matata'); ?></span>
+					</a>
+				</li>
+				<!--<li class="dropdown navTab">					
 					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink">
 					<span class="icon fa fa-comments" title="Diễn đàn"></span>
 					<span class="icon-text">Diễn đàn</span>
@@ -205,7 +202,7 @@
 						<li class="divider"></li>
 						<li><a href="#">Đồng hồ & Phụ kiện</a></li>
 					</ul>
-				</li>
+				</li>-->
 			</ul>
 		</div>
 		
