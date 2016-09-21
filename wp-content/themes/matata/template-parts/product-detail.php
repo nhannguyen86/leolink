@@ -36,30 +36,70 @@ get_header(); ?>
 	
 	</aside>
 	<div id="primary_product" class="content-area">
-		<main id="main" class="site-main" role="main">
-		<?php  //$page = get_query_var( 'page', 1 );  ?>
-		<?php  $k = get_query_var( 'c', 1 );  ?>
-<!--<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page  <?php echo (int) $k; ?></h1>
+		<main id="main" class="site-main" role="main">	
+			<?php
+				//product_detail( 'san_pham', 'danh_muc_san_pham' );	
+				$product_id = get_query_var( "c" , 0 );
+				echo $product_id;
+			?>
+			
+			<style>
+.city {display:none;}
+</style>
+			
+<ul class="w3-navbar w3-black">
+  <li><a href="#" class="tablink" onclick="openCity(event, 'London');">London</a></li>
+  <li><a href="#" class="tablink" onclick="openCity(event, 'Paris');">Paris</a></li>
+  <li><a href="#" class="tablink" onclick="openCity(event, 'Tokyo');">Tokyo</a></li>
+</ul>
 
-		<select name="page-dropdown"
- onchange='document.location.href=this.options[this.selectedIndex].value;'> 
- <option value="">-->
-<?php //echo esc_attr( __( 'Select page' ) ); ?></option> 
- <?php 
-  //$pages = get_pages(); 
-  //foreach ( $pages as $page ) {
-  //	$option = '<option value="' . get_page_link( $page->ID ) . '">';
-	//$option .= $page->post_title . ' ' . $page->post_name . ' ' . $page->ID;
-	//$option .= '</option>';
-	//echo $option;
-  //}
- ?>
-</select>
+<div id="London" class="w3-container w3-border city">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+</div>
 
+<div id="Paris" class="w3-container w3-border city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="w3-container w3-border city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+openCity(event, 'London');
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+			
+			
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<script type="text/javascript">
-	js_sidebar_product_detail_active(<?php echo (int) $k; ?>);
-</script>
+	
+	
+	<!-- right column-->
+	<?php
+		echo getPartnersCustomersRightColumn();
+	?>
+	<!-- End right column-->
+	
+	<script type="text/javascript">
+		<?php  $c = get_query_var( 'c', 1 );  ?>
+		js_sidebar_product_detail_active(<?php echo (int) $c; ?>);
+	</script>
 <?php
 get_footer();

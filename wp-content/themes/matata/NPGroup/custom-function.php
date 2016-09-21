@@ -20,6 +20,11 @@ function sw_styles_and_scripts() {
         wp_enqueue_style('matata-custom-style');
         wp_register_style('matata-menu-style', get_template_directory_uri().'/NPGroup/menu.css');
         wp_enqueue_style('matata-menu-style');
+        //product detail
+		//if (strpos(get_site_url(), get_page_link(111)) !== false) {
+			wp_register_style('matata-product-detail-style', get_template_directory_uri().'/NPGroup/w3.css');
+			wp_enqueue_style('matata-product-detail-style');
+        //}
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
 
@@ -65,7 +70,7 @@ function getPartnersCustomersRightColumn(){
 }
 
 function left_menu( $post_type, $taxonomy, $get_terms_args = array(), $wp_query_args = array() ){
-	$sanphamshow = 2;
+	$sanphamshow = 10;
 	$linkOneCategoryParent = get_page_link(113);
 	$linkOneCategory = get_page_link(108);
 	$linkProductDetail = get_page_link(111);
@@ -118,11 +123,12 @@ function left_menu( $post_type, $taxonomy, $get_terms_args = array(), $wp_query_
 		echo '</ul>';	
 	}
 }
+
 function getPrefixPage(){
 	return 'pp';
 }
 
-	add_filter('query_vars', 'my_register_query_vars_product' );
+add_filter('query_vars', 'my_register_query_vars_product' );
 function my_register_query_vars_product( $qvars ){
 	foreach( get_terms( 'danh_muc_san_pham', array('parent' => '0') ) as $parent_term ) {
 		foreach( get_terms( 'danh_muc_san_pham', array( 'hide_empty' => false, 'parent' => $parent_term->term_id ) ) as $child_term ) {
