@@ -37,29 +37,22 @@ get_header(); ?>
 	</aside>
 	<div id="primary_product" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php  //$page = get_query_var( 'page', 1 );  ?>
-		<?php  $k = get_query_var( 'c', 1 );  ?>
-<h1>Currently Browsing Page <?php echo (int) $page; ?> On a static front page  <?php echo (int) $k; ?></h1>
-
-		<select name="page-dropdown"
- onchange='document.location.href=this.options[this.selectedIndex].value;'> 
- <option value="">
-<?php echo esc_attr( __( 'Select page' ) ); ?></option> 
- <?php 
-  $pages = get_pages(); 
-  foreach ( $pages as $page ) {
-  	$option = '<option value="' . get_page_link( $page->ID ) . '">';
-	$option .= $page->post_title . ' ' . $page->post_name . ' ' . $page->ID;
-	$option .= '</option>';
-	echo $option;
-  }
- ?>
-</select>
-
+			<?php
+				product_one_category( 'san_pham', 'danh_muc_san_pham' );			
+			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<script type="text/javascript">
-	js_sidebar_one_category_active(<?php echo (int) $k; ?>);
-</script>
+	
+	
+	<!-- right column-->
+	<?php
+		echo getPartnersCustomersRightColumn();
+	?>
+	<!-- End right column-->
+	
+	<script type="text/javascript">
+		<?php  $c = get_query_var( 'c', 1 );  ?>
+		js_sidebar_one_category_active(<?php echo (int) $c; ?>);
+	</script>
 <?php
 get_footer();

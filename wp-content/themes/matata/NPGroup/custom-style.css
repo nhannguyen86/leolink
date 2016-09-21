@@ -667,3 +667,8 @@ article:nth-of-type(3n+1).matata-product{
     margin-left: 0;
     clear: left;
 }
+/*Message error*/
+.showError{
+	font-weight: bold;
+	color: red;
+}

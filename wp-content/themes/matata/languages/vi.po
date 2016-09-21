@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-09-20 10:17+0700\n"
-"PO-Revision-Date: 2016-09-20 14:48+0700\n"
+"POT-Creation-Date: 2016-09-21 15:34+0700\n"
+"PO-Revision-Date: 2016-09-21 15:36+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -39,6 +39,18 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
+#: NPGroup/custom-function.php:106
+msgid "See more"
+msgstr "Xem thêm"
+
+#: NPGroup/custom-function.php:393 NPGroup/custom-function.php:565
+msgid "Not exists "
+msgstr "Không tồn tại "
+
+#: NPGroup/custom-function.php:393 NPGroup/custom-function.php:565
+msgid "this category product."
+msgstr "danh mục sản phẩm này."
+
 #: comments.php:30
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -58,20 +70,6 @@ msgstr ""
 
 #: comments.php:83
 msgid "Comments are closed."
-msgstr ""
-
-#: footer.php:36
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: footer.php:36
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: footer.php:38
-#, php-format
-msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 #: functions.php:50
@@ -110,23 +108,23 @@ msgstr ""
 msgid "Shows widgets at footer sidebar three."
 msgstr ""
 
-#: header.php:102
-msgid "Skip to content"
-msgstr ""
-
-#: header.php:172 header.php:173
+#: header.php:43 header.php:152 header.php:153
 msgid "Home"
 msgstr "Trang chủ"
 
-#: header.php:185 header.php:186
+#: header.php:54 header.php:165 header.php:166
 msgid "Products"
 msgstr "Sản phẩm"
 
-#: header.php:191 header.php:192
+#: header.php:71 header.php:171 header.php:172
 msgid "Sign in"
 msgstr "Đăng nhập"
 
-#: header.php:197 header.php:198
+#: header.php:82
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:177 header.php:178
 msgid "Sign up"
 msgstr "Đăng ký"
 
@@ -375,14 +373,10 @@ msgstr ""
 msgid "Read More"
 msgstr "Đọc thêm…"
 
-#: template-parts/homepage.php:50
+#: template-parts/homepage.php:90
 msgid "&laquo; Older Entries"
 msgstr ""
 
-#: template-parts/homepage.php:51
+#: template-parts/homepage.php:91
 msgid "Newer Entries &raquo;"
-msgstr ""
-
-#: template-parts/product-one-category.php:47
-msgid "Select page"
 msgstr ""
