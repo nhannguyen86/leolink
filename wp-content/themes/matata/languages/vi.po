@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-09-21 15:34+0700\n"
-"PO-Revision-Date: 2016-09-21 15:36+0700\n"
+"POT-Creation-Date: 2016-09-21 22:15+0700\n"
+"PO-Revision-Date: 2016-09-21 22:16+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -39,15 +39,23 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: NPGroup/custom-function.php:106
+#: NPGroup/custom-function.php:62
+msgid "Customers"
+msgstr "Khách hàng"
+
+#: NPGroup/custom-function.php:66
+msgid "Partners"
+msgstr "Đối tác"
+
+#: NPGroup/custom-function.php:111
 msgid "See more"
 msgstr "Xem thêm"
 
-#: NPGroup/custom-function.php:393 NPGroup/custom-function.php:565
+#: NPGroup/custom-function.php:399 NPGroup/custom-function.php:571
 msgid "Not exists "
 msgstr "Không tồn tại "
 
-#: NPGroup/custom-function.php:393 NPGroup/custom-function.php:565
+#: NPGroup/custom-function.php:399 NPGroup/custom-function.php:571
 msgid "this category product."
 msgstr "danh mục sản phẩm này."
 
@@ -380,3 +388,19 @@ msgstr ""
 #: template-parts/homepage.php:91
 msgid "Newer Entries &raquo;"
 msgstr ""
+
+#: template-parts/product-detail.php:70
+msgid "General information"
+msgstr "Thông tin chung"
+
+#: template-parts/product-detail.php:71
+msgid "Characteristics"
+msgstr "Đặc điểm"
+
+#: template-parts/product-detail.php:72
+msgid "Specification"
+msgstr "Thông số kỹ thuật"
+
+#: template-parts/product-detail.php:77
+msgid "Product name: "
+msgstr "Tên sản phẩm:"

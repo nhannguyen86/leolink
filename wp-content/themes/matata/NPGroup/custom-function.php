@@ -22,8 +22,8 @@ function sw_styles_and_scripts() {
         wp_enqueue_style('matata-menu-style');
         //product detail
 		//if (strpos(get_site_url(), get_page_link(111)) !== false) {
-			wp_register_style('matata-product-detail-style', get_template_directory_uri().'/NPGroup/w3.css');
-			wp_enqueue_style('matata-product-detail-style');
+			//wp_register_style('matata-product-detail-style', get_template_directory_uri().'/NPGroup/w3.css');
+			//wp_enqueue_style('matata-product-detail-style');
         //}
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
@@ -59,11 +59,11 @@ function my_register_query_vars( $qvars ){
 function getPartnersCustomersRightColumn(){	
 	return "<aside id=\"secondary_product\" class=\"widget-area\" role=\"complementary\">
 				<section id=\"advps-slideshow1\" class=\"widget widget_categories\">
-					<h2 class=\"widget-title\"><i class=\"fa fa-slideshare\" aria-hidden=\"true\"></i> Khách hàng</h2>" .
+					<h2 class=\"widget-title\"><i class=\"fa fa-slideshare\" aria-hidden=\"true\"></i> ". __("Customers", "matata") ."</h2>" .
 					do_shortcode('[advps-slideshow optset="5"]') .
 				"</section>
 				<section id=\"advps-slideshow1\" class=\"widget widget_categories\">
-					<h2 class=\"widget-title\"><i class=\"fa fa-delicious\" aria-hidden=\"true\"></i> Đối tác</h2>".
+					<h2 class=\"widget-title\"><i class=\"fa fa-delicious\" aria-hidden=\"true\"></i> ". __("Partners", "matata") ."</h2>".
 					do_shortcode('[advps-slideshow optset="6"]') .
 				"</section>
 			</aside>";
