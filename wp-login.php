@@ -101,8 +101,8 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 		$login_header_url   = network_home_url();
 		$login_header_title = get_current_site()->site_name;
 	} else {
-		$login_header_url   = __( 'https://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_url   = __( 'http://www.leolink.com.vn' );
+		$login_header_title = __( 'LeoLink' );
 	}
 
 	/**
@@ -790,7 +790,6 @@ default:
 	} else {
 		$redirect_to = admin_url();
 	}
-
 	$reauth = empty($_REQUEST['reauth']) ? false : true;
 
 	$user = wp_signon( array(), $secure_cookie );
@@ -817,7 +816,6 @@ default:
 	 * @param WP_User|WP_Error $user                  WP_User object if login was successful, WP_Error object otherwise.
 	 */
 	$redirect_to = apply_filters( 'login_redirect', $redirect_to, $requested_redirect_to, $user );
-
 	if ( !is_wp_error($user) && !$reauth ) {
 		if ( $interim_login ) {
 			$message = '<p class="message">' . __('You have logged in successfully.') . '</p>';
@@ -842,14 +840,12 @@ default:
 				$redirect_to = get_dashboard_url( $user->ID );
 			elseif ( !$user->has_cap('edit_posts') )
 				$redirect_to = $user->has_cap( 'read' ) ? admin_url( 'profile.php' ) : home_url();
-
 			wp_redirect( $redirect_to );
 			exit();
 		}
 		wp_safe_redirect($redirect_to);
 		exit();
 	}
-
 	$errors = $user;
 	// Clear errors if loggedout is set.
 	if ( !empty($_GET['loggedout']) || $reauth )
@@ -889,7 +885,6 @@ default:
 		wp_clear_auth_cookie();
 
 	login_header(__('Log In'), '', $errors);
-
 	if ( isset($_POST['log']) )
 		$user_login = ( 'incorrect_password' == $errors->get_error_code() || 'empty_password' == $errors->get_error_code() ) ? esc_attr(wp_unslash($_POST['log'])) : '';
 	$rememberme = ! empty( $_POST['rememberme'] );

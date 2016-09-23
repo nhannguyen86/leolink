@@ -66,11 +66,33 @@
 			<!-- no selection -->
 		</ul>		
 			<ul class="visitorTabs static-cloned-original">
+				<?php 
+				if (is_user_logged_in() === false) {
+				?>
 				<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
 					<label for="LoginControl">
-						<a class="navLink OverlayTrigger" href="login/"><span style="" class="icon fa fa-sign-in" title="<?php echo __('Sign in', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Sign in', 'matata'); ?></span></a>
+						<a class="navLink OverlayTrigger" href="<?php echo wp_login_url( get_permalink() );?>"><span style="" class="icon fa fa-sign-in" title="<?php echo __('Sign in', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Sign in', 'matata'); ?></span></a>
 					</label>
 				</li>
+				<?php 
+				} else {
+				?>
+				<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
+					<label for="LoginControl">
+						<a class="navLink OverlayTrigger" href="<?php echo get_edit_user_link();?>">
+						<span style="top:-2px" class="icon fa" title="<?php echo __('Update your profile', 'matata'); ?>"><?php echo get_avatar(wp_get_current_user()->ID, 29)?></span>
+						<span class="icon-text"><?php echo wp_get_current_user()->display_name; ?></span></a>
+					</label>
+				</li>
+				<li class="navTab login has-icon-config has-icon icon-show-text firstVisible lastVisible" data-icon-config="1">
+					<label for="LoginControl">
+						<a class="navLink OverlayTrigger" href="<?php echo wp_logout_url( home_url() );?>">
+						<span style="" class="icon fa fa-sign-out" title="<?php echo __('Logout', 'matata'); ?>"></span><span class="icon-text"><?php echo __('Logout', 'matata'); ?></span></a>
+					</label>
+				</li>
+				<?php 
+				}
+				?>
 			</ul>
 		
 	</div>
@@ -166,18 +188,39 @@
 					<span class="icon-text"><?php echo __('Products', 'matata'); ?></span>
 					</a>
 				</li>
+				<?php 
+				if (is_user_logged_in() === false) {
+				?>
 				<li class="dropdown navTab">					
-					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
+					<a href="<?php echo wp_login_url( get_permalink() );?>" class="dropdown-toggle navLink">
 					<span class="icon fa fa-sign-in" title="<?php echo __('Sign in', 'matata'); ?>"></span>
 					<span class="icon-text"><?php echo __('Sign in', 'matata'); ?></span>
 					</a>
 				</li>
 				<li class="dropdown navTab">					
-					<a href="<?php echo get_page_link(79);?>" class="dropdown-toggle navLink">
+					<a href="<?php echo home_url( '/' );?>wp-login.php?action=register" class="dropdown-toggle navLink">
 					<span class="icon fa fa-sign-out" title="<?php echo __('Sign up', 'matata'); ?>"></span>
 					<span class="icon-text"><?php echo __('Sign up', 'matata'); ?></span>
 					</a>
 				</li>
+				<?php 
+				} else {
+				?>
+				<li class="dropdown navTab">					
+					<a href="<?php echo get_edit_user_link(); ?>" class="dropdown-toggle navLink" title="<?php echo __('Update your profile', 'matata'); ?>">
+					<span class="icon fa" style="margin-top:2px"><?php echo get_avatar(wp_get_current_user()->ID, 30)?></span>
+					<span class="icon-text"><?php echo wp_get_current_user()->display_name; ?></span>
+					</a>
+				</li>
+				<li class="dropdown navTab">					
+					<a href="<?php echo wp_logout_url( home_url() ); ?>" class="dropdown-toggle navLink">
+					<span class="icon fa fa-sign-out" title="<?php echo __('Logout', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('Logout', 'matata'); ?></span>
+					</a>
+				</li>
+				<?php 
+				}
+				?>
 				<!--<li class="dropdown navTab">					
 					<a href="http://www.leolink.com.vn/" class="dropdown-toggle navLink">
 					<span class="icon fa fa-comments" title="Diễn đàn"></span>

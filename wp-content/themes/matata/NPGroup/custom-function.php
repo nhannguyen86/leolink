@@ -2,8 +2,8 @@
 // Them css va javascript vao giua the head
 function sw_styles_and_scripts() {
 		//wp_register_script('matata-googleapis-script', 'https://code.jquery.com/jquery-3.1.0.min.js');         
-		//wp_register_script('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
-        //wp_enqueue_script('matata-googleapis-script');
+// 		wp_register_script('matata-googleapis-script', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+//      wp_enqueue_script('matata-googleapis-script');
         wp_register_script('matata-bootstrapcdn-script', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
         wp_enqueue_script('matata-bootstrapcdn-script');
         wp_register_style('matata-bootstrapcdn-style', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
@@ -28,9 +28,29 @@ function sw_styles_and_scripts() {
 }
 add_action('wp_enqueue_scripts', 'sw_styles_and_scripts');
 
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url('<?php echo get_theme_root_uri(); ?>../../uploads/2016/09/LeoLink_New_2-1.png');
+            background-size: auto;
+            width: auto;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+function admin_style_custom() { ?>
+	<style type="text/css">
+        #wp-admin-bar-Protection, #wpbody-content .update-nag, #menu-dashboard, #screen-meta-links, #wpfooter {
+			display: none;
+		}
+    </style>
+<?php }
+add_action( 'admin_enqueue_scripts', 'admin_style_custom' );
 
-//add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
+add_filter('show_admin_bar', '__return_false');
+
+add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
 
 //$wp_admin_bar->remove_menu( 'wpadminbar' );
 
@@ -54,6 +74,37 @@ function my_register_query_vars( $qvars ){
     //Add query variable to $qvars array
     $qvars[] = 'c';
     return $qvars;
+}
+
+/* global $wpdb;
+$table_name = $wpdb->prefix . 'log';
+if($wpdb->get_var("SHOW TABLES = '$table_name'") != $table_name) {
+	$charset_collate = $wpdb->get_charset_collate();
+	$sql = "CREATE TABLE $table_name (
+	id mediumint(9) NOT NULL AUTO_INCREMENT,
+	time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+	mgs text NOT NULL,
+	UNIQUE KEY id (id)
+	) $charset_collate;";
+	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	dbDelta( $sql );
+} */
+
+if (!function_exists('logger')) {
+	function logger($mgs, $obj = null) {
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'log';
+		if ($obj != null) {
+			$mgs .= ': ' . var_export($obj, true);
+		}
+		$wpdb->insert(
+				$table_name,
+				array(
+						'time' => current_time( 'mysql' ),
+						'mgs' => $mgs
+				)
+		);
+	}
 }
 
 function getPartnersCustomersRightColumn(){	
