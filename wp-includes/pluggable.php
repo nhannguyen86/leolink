@@ -2288,7 +2288,6 @@ function get_avatar( $id_or_email, $size = 96, $default = '', $alt = '', $args =
 	$args['alt']     = $alt;
 
 	$args = wp_parse_args( $args, $defaults );
-	logger("args", $args );
 	if ( empty( $args['height'] ) ) {
 		$args['height'] = $args['size'];
 	}
@@ -2299,7 +2298,6 @@ function get_avatar( $id_or_email, $size = 96, $default = '', $alt = '', $args =
 	if ( is_object( $id_or_email ) && isset( $id_or_email->comment_ID ) ) {
 		$id_or_email = get_comment( $id_or_email );
 	}
-	logger("id_or_email", $id_or_email );
 	/**
 	 * Filters whether to retrieve the avatar URL early.
 	 *
@@ -2314,7 +2312,6 @@ function get_avatar( $id_or_email, $size = 96, $default = '', $alt = '', $args =
 	 * @param array  $args        Arguments passed to get_avatar_url(), after processing.
 	 */
 	$avatar = apply_filters( 'pre_get_avatar', null, $id_or_email, $args );
-	logger("apply_filters pre_get_avatar args", $args );
 	if ( ! is_null( $avatar ) ) {
 		/** This filter is documented in wp-includes/pluggable.php */
 		return apply_filters( 'get_avatar', $avatar, $id_or_email, $args['size'], $args['default'], $args['alt'], $args );
@@ -2325,17 +2322,13 @@ function get_avatar( $id_or_email, $size = 96, $default = '', $alt = '', $args =
 	}
 
 	$url2x = get_avatar_url( $id_or_email, array_merge( $args, array( 'size' => $args['size'] * 2 ) ) );
-	logger("url2x", $url2x );
 	$args = get_avatar_data( $id_or_email, $args );
-	logger("args", $args );
 	$url = $args['url'];
-	logger("url", $url );
 	if ( ! $url || is_wp_error( $url ) ) {
 		return false;
 	}
 
 	$class = array( 'avatar', 'avatar-' . (int) $args['size'], 'photo' );
-	logger("class", $class );
 	if ( ! $args['found_avatar'] || $args['force_default'] ) {
 		$class[] = 'avatar-default';
 	}
