@@ -27,14 +27,14 @@ get_header(); ?>
 <div class="c_l2">
                 <p class="contact_phone"><i class="fa fa-phone" aria-hidden="true"></i> (08) 5407 3940 - Ext: 501</p>
                 <p class="contact_fax"><i class="fa fa-fax" aria-hidden="true"></i> (08) 5407 3938 - Ext: 501</p>
-                <p class="contact_cell"><i class="fa fa-mobile" aria-hidden="true"></i>Hotline: 0913 318 237</p>
+                <p class="contact_cell"><i class="fa fa-mobile" aria-hidden="true"></i> Hotline: 0913 318 237</p>
                 <p class="contact_mail"><i class="fa fa-envelope" aria-hidden="true"></i> consultancy@camix.com.vn</p>
                 </div>
                 <p class="supp c_l1">Chăm sóc khách hàng:</p>
 <div class="c_l2">
                 <p class="contact_phone"><i class="fa fa-phone" aria-hidden="true"></i> (08) 5407 3940 - Ext: 502</p>
                 <p class="contact_fax"><i class="fa fa-fax" aria-hidden="true"></i> (08) 5407 3938 - Ext: 502</p>
-                <p class="contact_cell"><i class="fa fa-mobile" aria-hidden="true"></i>Hotline: 0903 318 778 </p>
+                <p class="contact_cell"><i class="fa fa-mobile" aria-hidden="true"></i> Hotline: 0903 318 778 </p>
                 <p class="contact_mail"><i class="fa fa-envelope" aria-hidden="true"></i> service@camix.com.vn</p>
 </div>
             </div>
