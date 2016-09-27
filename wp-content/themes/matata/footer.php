@@ -18,18 +18,23 @@
 		<?php get_sidebar( 'footer' ); ?>
 
 
-		<div id="logoo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+		<!--<div id="logoo">
+				<a href="< ? php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img class="alignnone size-medium wp-image-76" src="http://www.leolink.com.vn/wp-content/uploads/2016/09/LeoLinkFooter-300x82.png" alt="LeoLinkFooter" width="300" height="82" />
 				</a>
-			<!--End footer image check. -->
+			End footer image check. 
+		</div>-->
+		<div class="address_footer">
+				<p><b>CÔNG TY TNHH LEO LINK</b></p></br>
+				<p>Địa chỉ: Số 9/15 ấp 3, Xã Tân Quý Tây, Huyện Bình Chánh, Thành phố Hồ Chí Minh</p>
+                <p>Điện thoại: 0938229677</p>
+                <p>Email: tien.luong@leolink.com.vn</p>
 		</div>
-
 		
 		<div class="coppy_right">
                 <p>© <span>Copyright 2016 Leolink.com.vn,</span>  All rights reserved</p>
                 <p>® Leolink.com.vn giữ bản quyền nội dung trên website này.</p>
-		<p>Nhóm NP | Thiết kế: website, ứng dụng desktop, ứng dụng mobile...</p>
+                <p>Nhóm NP | Thiết kế: website, ứng dụng desktop, ứng dụng mobile...</p>
              </div>
 
 		<!--<div class="site-info">

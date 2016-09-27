@@ -389,7 +389,7 @@ li {
     padding: 9px;
 }
 #primary_product {
-    width: 56.999%;
+    width: 54.999%;
     float: left;
     border: 1px solid #cccccc;
     height: auto;
@@ -397,7 +397,7 @@ li {
 }
 #secondary_product {
     float: right;
-    width: 19.999%;
+    width: 21.999%;
 }
 #colophon #logoo {
     height: auto;
@@ -416,6 +416,17 @@ li {
     width: 368px;
     height: auto;
     background-size: 368px 105px;
+}
+#colophon .address_footer{
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none !important;
+    outline: none !important;
+    width: 50%;
+    height: auto;
+    background-size: 368px 105px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 /* =RESPONSIVE MEDIA
@@ -438,6 +449,10 @@ li {
         width: 100%;
     }
     #colophon .coppy_right{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #colophon .address_footer{
         width: 100%;
         margin-top: 0px;
     }
@@ -572,8 +587,8 @@ li {
 	height: 40px;
 	line-height: 40px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	background-image:
-		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
+	/*background-image:
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);*/
 	background-repeat: repeat-x;
 	background-size: auto;
 	background-position: 0 0;

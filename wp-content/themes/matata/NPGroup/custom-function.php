@@ -116,8 +116,8 @@ function getPartnersCustomersRightColumn(){
 				<section id=\"advps-slideshow1\" class=\"widget widget_categories\">
 					<h2 class=\"widget-title\"><i class=\"fa fa-delicious\" aria-hidden=\"true\"></i> ". __("Partners", "matata") ."</h2>".
 					do_shortcode('[advps-slideshow optset="6"]') .
-				"</section>
-			</aside>";
+				"</section>";
+			//</aside>";
 }
 
 function left_menu( $post_type, $taxonomy, $get_terms_args = array(), $wp_query_args = array() ){
