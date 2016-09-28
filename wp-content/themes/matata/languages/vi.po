@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-09-21 22:15+0700\n"
-"PO-Revision-Date: 2016-09-21 22:16+0700\n"
+"POT-Creation-Date: 2016-09-28 11:24+0700\n"
+"PO-Revision-Date: 2016-09-28 11:27+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -39,23 +39,31 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: NPGroup/custom-function.php:62
+#: NPGroup/custom-function.php:113 template-parts/homepage.php:138
+#: template-parts/product-all-category.php:93
+#: template-parts/product-detail.php:159
+#: template-parts/product-one-category-parent.php:92
+#: template-parts/product-one-category.php:94
 msgid "Customers"
 msgstr "Khách hàng"
 
-#: NPGroup/custom-function.php:66
+#: NPGroup/custom-function.php:117 template-parts/homepage.php:168
+#: template-parts/product-all-category.php:124
+#: template-parts/product-detail.php:190
+#: template-parts/product-one-category-parent.php:123
+#: template-parts/product-one-category.php:125
 msgid "Partners"
 msgstr "Đối tác"
 
-#: NPGroup/custom-function.php:111
+#: NPGroup/custom-function.php:162
 msgid "See more"
 msgstr "Xem thêm"
 
-#: NPGroup/custom-function.php:399 NPGroup/custom-function.php:571
+#: NPGroup/custom-function.php:450 NPGroup/custom-function.php:622
 msgid "Not exists "
 msgstr "Không tồn tại "
 
-#: NPGroup/custom-function.php:399 NPGroup/custom-function.php:571
+#: NPGroup/custom-function.php:450 NPGroup/custom-function.php:622
 msgid "this category product."
 msgstr "danh mục sản phẩm này."
 
@@ -116,23 +124,35 @@ msgstr ""
 msgid "Shows widgets at footer sidebar three."
 msgstr ""
 
-#: header.php:43 header.php:152 header.php:153
+#: header.php:43 header.php:174 header.php:175
 msgid "Home"
 msgstr "Trang chủ"
 
-#: header.php:54 header.php:165 header.php:166
+#: header.php:54 header.php:187 header.php:188
 msgid "Products"
 msgstr "Sản phẩm"
 
-#: header.php:71 header.php:171 header.php:172
+#: header.php:74 header.php:202 header.php:203
 msgid "Sign in"
 msgstr "Đăng nhập"
 
-#: header.php:82
+#: header.php:83 header.php:216
+msgid "Update your profile"
+msgstr ""
+
+#: header.php:90 header.php:223 header.php:224
+msgid "Logout"
+msgstr ""
+
+#: header.php:104
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:177 header.php:178
+#: header.php:193 header.php:194
+msgid "IP Paper Industry"
+msgstr "Ngành giấy IP"
+
+#: header.php:208 header.php:209
 msgid "Sign up"
 msgstr "Đăng ký"
 
@@ -330,7 +350,7 @@ msgstr ""
 
 #: inc/template-tags.php:91
 msgid "Leave a comment"
-msgstr ""
+msgstr "Bình luận"
 
 #: inc/template-tags.php:91
 msgid "1 Comment"
@@ -349,6 +369,14 @@ msgstr ""
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
+
+#: template-parts/Trans-Discuz.php:2
+msgid "Be the First to Comment!"
+msgstr "Bình luận đầu tiên"
+
+#: template-parts/Trans-Discuz.php:3
+msgid "Leave a Reply"
+msgstr "Bình luận"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -389,6 +417,26 @@ msgstr ""
 msgid "Newer Entries &raquo;"
 msgstr ""
 
+#: template-parts/manage-questions-tabs.php:26
+msgid "Technology"
+msgstr ""
+
+#: template-parts/manage-questions-tabs.php:32
+msgid "Devices"
+msgstr "Thiết bị"
+
+#: template-parts/manage-questions-tabs.php:38
+msgid "Chemistry"
+msgstr "Hóa chất"
+
+#: template-parts/manage-questions-tabs.php:43
+msgid "Necklace"
+msgstr "Dây chuyền"
+
+#: template-parts/manage-questions-tabs.php:60
+msgid "Select page"
+msgstr ""
+
 #: template-parts/product-detail.php:70
 msgid "General information"
 msgstr "Thông tin chung"
@@ -404,3 +452,6 @@ msgstr "Thông số kỹ thuật"
 #: template-parts/product-detail.php:77
 msgid "Product name: "
 msgstr "Tên sản phẩm:"
+
+#~ msgid "Be the First to Comment! h"
+#~ msgstr "Bình luận"

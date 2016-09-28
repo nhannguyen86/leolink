@@ -44,9 +44,6 @@ get_header(); ?>
 	<!-- End view san pham-->
 	
 	<!-- right column-->
-	<?php
-		//echo getPartnersCustomersRightColumn();				
-	?>
 	<aside id="secondary_product" class="widget-area" role="complementary">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/NPGroup/slick/slick.css'; ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/NPGroup/slick/slick-theme.css'; ?>">
@@ -217,7 +214,7 @@ get_header(); ?>
 							animation: 'fade',
 							functionBefore: function(origin, continueTooltip) {
 								continueTooltip();
-								origin.tooltipster('content', '<div class="hovercard"> <div> <div class="display-pic"> <div class="cover-photo"> <div class="display-pic-gradient"></div><img src="http://localhost/leolink/wp-content/themes/matata/NPGroup/hovercard/dp.jpg"> </div><div class="profile-pic"> <div class="pic"> <?php the_post_thumbnail('matata-featured'); ?> </div><div class="details"> <ul class="details-list"> <li class="details-list-item"> <p> <span class="glyph glyph-home"></span> <span> <?php echo $address; ?> </span> </p></li></ul> </div></div></div><div class="display-pic-gradient"></div><div class="title-container"> <a class="title" href="#" title="Visit Page"> <?php the_title(); ?> </a> <p class="other-info"></p></div><div class="info"> <div class="info-inner"> <div class="interactions"> <a href="<?php echo $website; ?>" class="btn">Website</a> <a href="<?php echo $facebook; ?>" class="btn">Facebook</a> </div></div></div></div></div>');
+								origin.tooltipster('content', '<div class="hovercard"> <div> <div class="display-pic"> <div class="cover-photo"> <div class="display-pic-gradient"></div><img src="http://localhost/leolink/wp-content/themes/matata/NPGroup/hovercard/dp.jpg"> </div><div class="profile-pic"> <div class="pic"> <?php the_post_thumbnail('matata-featured'); ?> </div><div class="details"> <ul class="details-list"> <li class="details-list-item"> <p> <span class="glyph glyph-home"></span> <span> <?php echo $address; ?> </span> </p></li></ul> </div></div></div><div class="display-pic-gradient"></div><div class="title-container"> <a class="title" href="#" title="Visit Page"> <?php the_title(); ?> </a> <p class="other-info"></p></div><div class="info"> <div class="info-inner"> <div class="interactions"> <a href="<?php echo $website; ?>" class="btn" target="_blank" >Website</a> <a href="<?php echo $facebook; ?>" class="btn" target="_blank" >Facebook</a> </div></div></div></div></div>');
 							}
 						});  	
 					<?php 
@@ -263,7 +260,7 @@ get_header(); ?>
 							animation: 'fade',
 							functionBefore: function(origin, continueTooltip) {
 								continueTooltip();
-								origin.tooltipster('content', '<div class="hovercard"> <div> <div class="display-pic"> <div class="cover-photo"> <div class="display-pic-gradient"></div><img src="http://localhost/leolink/wp-content/themes/matata/NPGroup/hovercard/dp.jpg"> </div><div class="profile-pic"> <div class="pic"> <?php the_post_thumbnail('matata-featured'); ?> </div><div class="details"> <ul class="details-list"> <li class="details-list-item"> <p> <span class="glyph glyph-home"></span> <span> <?php echo $address; ?> </span> </p></li></ul> </div></div></div><div class="display-pic-gradient"></div><div class="title-container"> <a class="title" href="#" title="Visit Page"> <?php the_title(); ?> </a> <p class="other-info"></p></div><div class="info"> <div class="info-inner"> <div class="interactions"> <a href="<?php echo $website; ?>" class="btn">Website</a> <a href="<?php echo $facebook; ?>" class="btn">Facebook</a> </div></div></div></div></div>');
+								origin.tooltipster('content', '<div class="hovercard"> <div> <div class="display-pic"> <div class="cover-photo"> <div class="display-pic-gradient"></div><img src="http://localhost/leolink/wp-content/themes/matata/NPGroup/hovercard/dp.jpg"> </div><div class="profile-pic"> <div class="pic"> <?php the_post_thumbnail('matata-featured'); ?> </div><div class="details"> <ul class="details-list"> <li class="details-list-item"> <p> <span class="glyph glyph-home"></span> <span> <?php echo $address; ?> </span> </p></li></ul> </div></div></div><div class="display-pic-gradient"></div><div class="title-container"> <a class="title" href="#" title="Visit Page"> <?php the_title(); ?> </a> <p class="other-info"></p></div><div class="info"> <div class="info-inner"> <div class="interactions"> <a href="<?php echo $website; ?>" class="btn" target="_blank" >Website</a> <a href="<?php echo $facebook; ?>" class="btn" target="_blank" >Facebook</a> </div></div></div></div></div>');
 							}
 						});  	
 					<?php 

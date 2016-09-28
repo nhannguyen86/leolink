@@ -3877,7 +3877,7 @@ html .taggingInput .tag>span:first-child+a:last-child:before {
 		rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,
 		endColorstr=#00FFFFFF);
-	height: 13px
+	/*height: 13px*/
 }
 
 .button.smallButton {

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-09-21 14:50+0700\n"
+"POT-Creation-Date: 2016-09-27 15:18+0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,11 +34,31 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: NPGroup/custom-function.php:283
+#: NPGroup/custom-function.php:113 template-parts/homepage.php:138
+#: template-parts/product-all-category.php:93
+#: template-parts/product-detail.php:159
+#: template-parts/product-one-category-parent.php:92
+#: template-parts/product-one-category.php:94
+msgid "Customers"
+msgstr ""
+
+#: NPGroup/custom-function.php:117 template-parts/homepage.php:168
+#: template-parts/product-all-category.php:124
+#: template-parts/product-detail.php:190
+#: template-parts/product-one-category-parent.php:123
+#: template-parts/product-one-category.php:125
+msgid "Partners"
+msgstr ""
+
+#: NPGroup/custom-function.php:162
+msgid "See more"
+msgstr ""
+
+#: NPGroup/custom-function.php:450 NPGroup/custom-function.php:622
 msgid "Not exists "
 msgstr ""
 
-#: NPGroup/custom-function.php:283
+#: NPGroup/custom-function.php:450 NPGroup/custom-function.php:622
 msgid "this category product."
 msgstr ""
 
@@ -99,23 +119,35 @@ msgstr ""
 msgid "Shows widgets at footer sidebar three."
 msgstr ""
 
-#: header.php:43 header.php:152 header.php:153
+#: header.php:43 header.php:174 header.php:175
 msgid "Home"
 msgstr ""
 
-#: header.php:54 header.php:165 header.php:166
+#: header.php:54 header.php:187 header.php:188
 msgid "Products"
 msgstr ""
 
-#: header.php:71 header.php:171 header.php:172
+#: header.php:74 header.php:202 header.php:203
 msgid "Sign in"
 msgstr ""
 
-#: header.php:82
+#: header.php:83 header.php:216
+msgid "Update your profile"
+msgstr ""
+
+#: header.php:90 header.php:223 header.php:224
+msgid "Logout"
+msgstr ""
+
+#: header.php:104
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:177 header.php:178
+#: header.php:193 header.php:194
+msgid "IP Paper Industry"
+msgstr ""
+
+#: header.php:208 header.php:209
 msgid "Sign up"
 msgstr ""
 
@@ -362,6 +394,22 @@ msgstr ""
 msgid "Newer Entries &raquo;"
 msgstr ""
 
-#: template-parts/product-one-category.php:47
+#: template-parts/manage-questions-tabs.php:48
 msgid "Select page"
+msgstr ""
+
+#: template-parts/product-detail.php:70
+msgid "General information"
+msgstr ""
+
+#: template-parts/product-detail.php:71
+msgid "Characteristics"
+msgstr ""
+
+#: template-parts/product-detail.php:72
+msgid "Specification"
+msgstr ""
+
+#: template-parts/product-detail.php:77
+msgid "Product name: "
 msgstr ""

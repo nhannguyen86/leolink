@@ -188,6 +188,12 @@
 					<span class="icon-text"><?php echo __('Products', 'matata'); ?></span>
 					</a>
 				</li>
+				<li class="dropdown navTab">					
+					<a href="<?php echo get_page_link(193);?>" class="dropdown-toggle navLink">
+					<span class="icon fa fa-product-hunt" title="<?php echo __('IP Paper Industry', 'matata'); ?>"></span>
+					<span class="icon-text"><?php echo __('IP Paper Industry', 'matata'); ?></span>
+					</a>
+				</li>
 				<?php 
 				if (is_user_logged_in() === false) {
 				?>
